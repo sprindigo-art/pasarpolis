@@ -1,0 +1,3 @@
+"use strict";(self.webpackChunkcontrolpanel=self.webpackChunkcontrolpanel||[]).push([[8631],{68631:(e,s,t)=>{t.r(s),t.d(s,{default:()=>l});var r=t(8634),n=t(80878);const a=t.n(n)().div`
+`;var c=t(19724),d=t(1502),i=t(70579);const l=e=>{const{presetId:s}=(0,d.useMemo)((()=>e.match.params),[e.match.params]);return(0,i.jsx)(a,{children:(0,i.jsxs)(r.A,{children:[(0,i.jsx)("h2",{children:"Edit Existing Preset"}),(0,i.jsx)(c.A,{isEdit:!0,editPresetId:s})]})})}}}]);
+//# sourceMappingURL=8631.8d882fa1.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcontrolpanel=self.webpackChunkcontrolpanel||[]).push([[29],{70029:(e,t,n)=>{n.r(t),n.d(t,{default:()=>l});var o=n(79471),s=n(70579);const l=e=>{let{defaultRoute:t}=e;return"/"!==t?(0,s.jsx)(o.Redirect,{to:t}):"You have no permissions"}}}]);
+//# sourceMappingURL=29.f1365230.chunk.js.map

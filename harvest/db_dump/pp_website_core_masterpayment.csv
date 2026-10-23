@@ -1,0 +1,99 @@
+id,updated_at,created_at,order_id,amount,status,no_of_retries,pending_confirmed_at,settlement_confirmed_at,payment_gateway_response,quote_id,payment_gateway,pg_txn_id,payment_gateway_frontend_resp,url_params,utm_campaign,utm_medium,utm_source,external_order_id,temp_token_id,payment_method,_ingested_at
+1,2018-09-23 12:32:21.766048 UTC,2018-08-28 16:57:43.480972 UTC,PPM-1,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""2cd36c92-9598-4d8f-8ed9-7ceb9e57698c""}",dd85ec92453f4252a767ced3059c38b0,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+4,2018-09-23 12:31:00.727327 UTC,2018-08-28 17:38:43.341053 UTC,PPM-4,55000.00,FAILURE,0,,,"{
+  ""status_code"" : ""407"",
+  ""status_message"" : ""Success, transaction is found"",
+  ""transaction_id"" : ""22578bcf-f220-4ac0-9bba-9ca94175ca6d"",
+  ""order_id"" : ""PPM-4"",
+  ""gross_amount"" : ""55000.00"",
+  ""payment_type"" : ""bank_transfer"",
+  ""transaction_time"" : ""2018-08-29 00:38:59"",
+  ""transaction_status"" : ""expire"",
+  ""fraud_status"" : ""accept"",
+  ""permata_va_number"" : ""8778002572861542"",
+  ""signature_key"" : ""6aadfee0ac3d4b1e2ed6e2e79ca257a4b90cfddf1ace5d3bec75c934fde38fb38b48c9b275fe52bf958475f0c732e4b9a1199f4734eed24b14aed9416f23b7d4""
+}",4cb8831589f047e492f885e545234bd6,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+5,2018-09-23 12:31:01.438189 UTC,2018-08-28 17:39:07.976126 UTC,PPM-5,55000.00,FAILURE,0,,,"{
+  ""status_code"" : ""407"",
+  ""status_message"" : ""Success, transaction is found"",
+  ""transaction_id"" : ""c41f5ebc-3dd1-49d4-8033-9351974a3737"",
+  ""order_id"" : ""PPM-5"",
+  ""gross_amount"" : ""55000.00"",
+  ""payment_type"" : ""bank_transfer"",
+  ""transaction_time"" : ""2018-08-29 00:39:34"",
+  ""transaction_status"" : ""expire"",
+  ""fraud_status"" : ""accept"",
+  ""permata_va_number"" : ""8778007305524902"",
+  ""signature_key"" : ""26a67134764731ad967cf1dc2364444926816661519fe178b8577b1508d32a9dd739db4f0dc90d6686062e4994d56bda269bf60bb10b4482b71a478db035792b""
+}",4cb8831589f047e492f885e545234bd6,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+6,2018-09-23 12:31:02.136316 UTC,2018-08-28 17:40:05.577989 UTC,PPM-6,55000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""993edae2-d567-4433-bbeb-9a948a4ba0a5""}",4cb8831589f047e492f885e545234bd6,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+7,2018-09-23 12:31:45.391462 UTC,2018-08-28 18:36:34.676592 UTC,PPM-7,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""931e925e-4ff8-4af6-8c69-13116ab14d4e""}",968931fcd08e4498b83a7d3c5d65cc27,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+8,2018-09-23 12:32:08.581296 UTC,2018-08-28 18:37:12.590140 UTC,PPM-8,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""18714de4-bf80-44d6-af21-f60b6e2d48fb""}",bbf4e4f17cef4187a510e20de04118a2,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+9,2018-09-23 12:32:38.767714 UTC,2018-08-28 18:37:47.989543 UTC,PPM-9,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""f1d92b87-6ad3-4892-a02e-683f77764fe7""}",fd1b9e55e7fc4125a72252d0c16e2c65,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+10,2018-09-23 12:30:29.863105 UTC,2018-08-28 18:39:23.146960 UTC,PPM-10,37500.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""1c47db5f-2c29-420b-b77c-8d947f297f11""}",23932bb22d04451f9f658aaa43e04ffd,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+11,2018-09-23 12:31:52.533618 UTC,2018-08-28 18:41:36.241482 UTC,PPM-11,55000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""0279fe5f-7346-47a7-8cbd-48c53f15b79b""}",a25c2dcff6f7467988a0d36e9f711c8d,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+12,2018-09-23 12:31:53.228264 UTC,2018-08-28 18:41:42.797408 UTC,PPM-12,55000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""b8df988f-ee8f-460a-a569-6cbf70afecba""}",a25c2dcff6f7467988a0d36e9f711c8d,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+13,2018-09-23 12:31:53.945627 UTC,2018-08-28 18:41:48.718977 UTC,PPM-13,55000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""d26ed0b8-41f9-4c6a-8205-2d124ef9872f""}",a25c2dcff6f7467988a0d36e9f711c8d,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+14,2018-09-23 12:31:54.633398 UTC,2018-08-28 18:41:53.565114 UTC,PPM-14,55000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""190ced8e-37f9-4a98-94d7-2f99669798a4""}",a25c2dcff6f7467988a0d36e9f711c8d,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+15,2018-09-23 12:30:03.751527 UTC,2018-08-29 01:00:54.383191 UTC,PPM-15,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""2874613e-f8fc-4c26-a370-d0c54e83298e""}",009126c46ed442b08e7b3661d23cf72c,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+16,2018-09-23 12:30:37.109532 UTC,2018-08-29 01:14:47.790590 UTC,PPM-16,25000.00,FAILURE,0,,,"{""payment_type"":""echannel"",""bill_key"":""272872966732"",""biller_code"":""70012"",""transaction_time"":""2018-08-29 08:16:41"",""gross_amount"":""25000.00"",""currency"":""IDR"",""order_id"":""PPM-16"",""signature_key"":""a0dfb813fa3a573e568ba86400b65782128a50d3ab430215f67466d8c8e327554732ec2e631533c55c394f6594cf6fb74268a347f1082357920a9087af3ca410"",""status_code"":""407"",""transaction_id"":""cd75a311-878b-4179-85a2-1beb0834c379"",""transaction_status"":""expire"",""fraud_status"":""accept"",""status_message"":""Success, transaction is found""}",2f2eec26ed5f44e69a0edd227d01e669,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+17,2018-09-23 12:30:37.797703 UTC,2018-08-29 01:16:48.170591 UTC,PPM-17,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""b4368261-f706-4ba2-9025-73809339e939""}",2f2eec26ed5f44e69a0edd227d01e669,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+18,2018-09-23 12:30:38.477752 UTC,2018-08-29 01:16:58.282696 UTC,PPM-18,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""ab30f27d-c431-4ee2-a1ae-03ae2e3a4b09""}",2f2eec26ed5f44e69a0edd227d01e669,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+19,2018-09-23 12:30:39.227460 UTC,2018-08-29 01:17:01.387589 UTC,PPM-19,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""34aa1cbb-4b1a-4d22-8e22-3a40f2783c74""}",2f2eec26ed5f44e69a0edd227d01e669,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+20,2018-09-23 12:31:15.395982 UTC,2018-08-29 01:21:15.447347 UTC,PPM-20,55000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""2803d16c-0915-4943-9fd6-6e3f7aae5ca0""}",600a057f4b3b4ab797e9c2ce958ef1ca,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+21,2018-09-23 12:32:09.304714 UTC,2018-08-29 01:47:58.454670 UTC,PPM-21,55000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""bd0e3b74-fca1-4166-be65-98e4ca20a04f""}",c52b0a2ad657495baaf4d5ab1df7340c,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+22,2018-09-23 12:31:16.083691 UTC,2018-08-29 09:11:10.461175 UTC,PPM-22,55000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""5f4e276e-c9d1-4adf-9716-668fcd7375bf""}",600a057f4b3b4ab797e9c2ce958ef1ca,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+23,2018-09-23 12:30:17.427925 UTC,2018-08-30 04:45:18.396150 UTC,PPM-23,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""8a47dcb7-cdc8-403e-b580-b76e904e0e96""}",1e7b98324e64488b848e67d734f6a366,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+24,2018-09-23 12:30:18.152773 UTC,2018-08-30 04:46:39.722644 UTC,PPM-24,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""bc8ff3d5-2f87-4355-9e0d-a5ac6f91eaf8""}",1e7b98324e64488b848e67d734f6a366,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+25,2018-09-23 12:30:18.836892 UTC,2018-08-30 04:46:44.719564 UTC,PPM-25,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""e129c4ff-2c6b-4847-8aa3-eb130ef934f7""}",1e7b98324e64488b848e67d734f6a366,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+26,2018-09-23 12:30:19.547400 UTC,2018-08-30 04:46:50.439912 UTC,PPM-26,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""cb91e032-7dc1-4ec7-b3d8-42cf116d028a""}",1e7b98324e64488b848e67d734f6a366,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+27,2018-09-23 12:30:27.749458 UTC,2018-08-30 05:34:38.709028 UTC,PPM-27,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""d043f40b-e26b-4985-a0d8-53d3f191b081""}",22668e1a0d174a26bcdebabb4d89501d,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+28,2018-09-23 12:31:36.095313 UTC,2018-08-30 07:24:42.026478 UTC,PPM-28,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""3c3bed7a-3281-4c7a-9afd-56efecb44b02""}",93eaf281b77148ee9e21765e662644c9,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+29,2018-09-23 12:30:59.240174 UTC,2018-08-30 08:05:37.023251 UTC,PPM-29,55000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""ef2dd15f-b5ff-4bf1-b6be-2ce5e958b6b1""}",4c94fdb47dbb4e0ca205ef2ca93977d5,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+30,2018-09-23 12:30:58.541740 UTC,2018-08-30 08:32:58.734057 UTC,PPM-30,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""6299941f-568d-4270-8167-4cbc9944b889""}",4c34e731ba624942beea3076c16d07ef,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+31,2018-09-23 12:30:28.453759 UTC,2018-08-30 09:14:09.376233 UTC,PPM-31,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""8bf9beb7-a44a-4473-afd6-5af0ad3bbe23""}",22668e1a0d174a26bcdebabb4d89501d,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+2,2018-09-23 12:30:49.936601 UTC,2018-08-28 16:59:56.155636 UTC,PPM-2,100000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""289ba102-4a0e-4260-b03d-8b36f3d942bd""}",3caa09056cb141078ff71e7edbd05a34,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+3,2018-09-23 12:30:59.962671 UTC,2018-08-28 17:38:13.381968 UTC,PPM-3,55000.00,FAILURE,0,,,"{
+  ""status_code"" : ""407"",
+  ""status_message"" : ""Success, transaction is found"",
+  ""transaction_id"" : ""b9e2a64e-ec1b-45ff-8e54-1f056218899d"",
+  ""order_id"" : ""PPM-3"",
+  ""gross_amount"" : ""55000.00"",
+  ""payment_type"" : ""bank_transfer"",
+  ""transaction_time"" : ""2018-08-29 00:38:32"",
+  ""transaction_status"" : ""expire"",
+  ""fraud_status"" : ""accept"",
+  ""permata_va_number"" : ""8778005119964887"",
+  ""signature_key"" : ""255e3a38ce54f6eace194861985f97670f373c74e2f6654a9e489e72b5bfbbaba70bfde93ee10b39f87ed1d292250c2f563cb3dfdb3559afe92a150a42791a6f""
+}",4cb8831589f047e492f885e545234bd6,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+32,2018-09-23 12:31:36.789241 UTC,2018-08-30 09:48:55.365160 UTC,PPM-32,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""491e32b7-e7ea-427d-a8ae-f7ff08347916""}",93eaf281b77148ee9e21765e662644c9,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+33,2018-09-23 12:30:52.108890 UTC,2018-08-30 09:51:11.063709 UTC,PPM-33,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""0700f2ad-82d9-4ce8-82d6-ee8afdcdac4a""}",452442011c634e82b0bdcdf6ba0cca77,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+34,2018-09-23 12:32:26.163326 UTC,2018-08-30 15:31:24.013287 UTC,PPM-34,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""2f6381d3-de07-48cc-83ae-f39cd0def73d""}",ebd56683f5da4f7caaf2fb5843277bcf,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+35,2018-09-23 12:32:27.550335 UTC,2018-08-31 06:31:39.851067 UTC,PPM-35,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""a7be921a-e231-4915-bae7-7c7c6b7bbbb6""}",f6f8d53cccf2454d9293e7280a76d3f5,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+36,2018-08-31 07:16:51.862324 UTC,2018-08-31 07:13:51.867487 UTC,PPM-36,25000.00,SUCCESS,0,,,,759cd02e83374c70908d3a674ef7b639,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+37,2018-09-23 12:31:14.696375 UTC,2018-08-31 07:42:25.498277 UTC,PPM-37,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""baf1adb3-de39-4b27-8946-7b562422cd90""}",5f968214ef694e72b6e6f789babbf2c0,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+38,2018-09-23 12:31:28.201377 UTC,2018-08-31 08:39:05.737471 UTC,PPM-38,25000.00,FAILURE,0,,,"{""payment_type"":""echannel"",""bill_key"":""672407806692"",""biller_code"":""70012"",""transaction_time"":""2018-08-31 15:39:24"",""gross_amount"":""25000.00"",""currency"":""IDR"",""order_id"":""PPM-38"",""signature_key"":""f33d2d2e1f82aee0980d887d56620a79b6d9eeaa9e6bc44fd910293304a0ed94dcc200a64a53eb92623b6b67eab2490c8f90e135e24ae19c5589c4cb967eadc1"",""status_code"":""407"",""transaction_id"":""2c1b19d4-65f9-4f41-9e10-c620df7cafac"",""transaction_status"":""expire"",""fraud_status"":""accept"",""status_message"":""Success, transaction is found""}",8a13610dcc2b46bab1e9686112c29b48,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+39,2018-09-23 12:31:28.906500 UTC,2018-08-31 08:39:32.715427 UTC,PPM-39,25000.00,FAILURE,0,,,"{""payment_type"":""echannel"",""bill_key"":""488386837959"",""biller_code"":""70012"",""transaction_time"":""2018-08-31 15:39:46"",""gross_amount"":""25000.00"",""currency"":""IDR"",""order_id"":""PPM-39"",""signature_key"":""eef6ac554aa64413a8cdd09adfb1a0ef76f7704fc00d9fe79efcba621bc0ef64c508a02247eadbf505280d84802de1e6880ef5f040e737209668b1afc2c0df8f"",""status_code"":""407"",""transaction_id"":""2b2d848c-27e0-454e-9995-8b83bc30cfaf"",""transaction_status"":""expire"",""fraud_status"":""accept"",""status_message"":""Success, transaction is found""}",8a13610dcc2b46bab1e9686112c29b48,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+40,2018-09-23 12:31:29.612003 UTC,2018-08-31 08:39:52.436999 UTC,PPM-40,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""5a014119-3b8a-42ba-baba-ff8cc0bb130a""}",8a13610dcc2b46bab1e9686112c29b48,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+41,2018-09-23 12:32:06.449212 UTC,2018-08-31 08:43:37.849584 UTC,PPM-41,25000.00,FAILURE,0,,,"{""payment_type"":""echannel"",""bill_key"":""221386449904"",""biller_code"":""70012"",""transaction_time"":""2018-08-31 15:44:06"",""gross_amount"":""25000.00"",""currency"":""IDR"",""order_id"":""PPM-41"",""signature_key"":""5701df8eacbab315b4ddbc542465e9572e68f904e94c8a442a1a035bb6e48ec3e661065e40e25cc4e1a998673f4a7323a888cd87bf304a50394c470a5b092223"",""status_code"":""407"",""transaction_id"":""c48eab5f-facc-4da9-bb99-b4fa84643637"",""transaction_status"":""expire"",""fraud_status"":""accept"",""status_message"":""Success, transaction is found""}",b94f0f15125042bea3341fc39fac32f5,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+42,2018-09-23 12:32:07.159137 UTC,2018-08-31 08:44:18.026652 UTC,PPM-42,25000.00,FAILURE,0,,,"{
+  ""status_code"" : ""407"",
+  ""status_message"" : ""Success, transaction is found"",
+  ""transaction_id"" : ""10346961-1827-44ad-9820-29118813da2f"",
+  ""order_id"" : ""PPM-42"",
+  ""gross_amount"" : ""25000.00"",
+  ""payment_type"" : ""bank_transfer"",
+  ""transaction_time"" : ""2018-08-31 15:46:49"",
+  ""transaction_status"" : ""expire"",
+  ""fraud_status"" : ""accept"",
+  ""permata_va_number"" : ""8778002423625408"",
+  ""signature_key"" : ""461fe95549c251541420205b9f84b564234098fd6972d7aa54e69012d039d7e7b21a9a89aa079fba78d708c28a66141bedf9b5d6e8f1550b741286e819315f0e""
+}",b94f0f15125042bea3341fc39fac32f5,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+43,2018-09-23 12:32:07.876939 UTC,2018-08-31 08:47:08.484179 UTC,PPM-43,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""50c1c5ee-55c1-467a-85cb-0cffacd85e68""}",b94f0f15125042bea3341fc39fac32f5,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+44,2018-09-23 12:32:25.380418 UTC,2018-08-31 08:52:51.515844 UTC,PPM-44,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""a69ef69b-6cc9-4942-8fed-ac9adef61794""}",e67e337adf0348aebba1863a2fc429a4,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+45,2018-09-23 12:30:45.615760 UTC,2018-09-01 05:58:59.716606 UTC,PPM-45,25000.00,FAILURE,0,,,"{""payment_type"":""echannel"",""bill_key"":""608999164536"",""biller_code"":""70012"",""transaction_time"":""2018-09-01 12:59:28"",""gross_amount"":""25000.00"",""currency"":""IDR"",""order_id"":""PPM-45"",""signature_key"":""d19c3052efc97ab46f04def5528a12da447cfd17f1ae46298de6c74823b4051aff9502f4858af0b1d13802284ab1bac5a33471e0ac8f61d80d189b969d2c732c"",""status_code"":""407"",""transaction_id"":""b3c03c55-f590-45de-9318-7f8a859eace3"",""transaction_status"":""expire"",""fraud_status"":""accept"",""status_message"":""Success, transaction is found""}",3915f7dd552743389b07e0ef8306760d,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+46,2018-09-23 12:30:46.314036 UTC,2018-09-01 05:59:55.248971 UTC,PPM-46,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""d506ac57-9c77-4cb5-b103-44951ab959bb""}",3915f7dd552743389b07e0ef8306760d,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+47,2018-09-23 12:30:08.134015 UTC,2018-09-03 06:53:09.371599 UTC,PPM-47,25000.00,FAILURE,0,,,"{""status_code"":""404"",""status_message"":""Transaction doesn't exist."",""id"":""a27da773-ffb1-47b7-97c5-719995af7f02""}",0d46bb1681d846d7a201e1ca70fe5ee7,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+48,2018-09-05 09:26:16.913989 UTC,2018-09-05 09:22:43.507474 UTC,PPM-48,25000.00,PENDING,0,,,,0f0c1f010cc54e7ea86316a8a5fe0e12,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+49,2018-09-05 09:31:31.357818 UTC,2018-09-05 09:26:17.695137 UTC,PPM-49,25000.00,SETTLEMENT,0,,,,0f0c1f010cc54e7ea86316a8a5fe0e12,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC
+50,2018-09-05 09:31:32.610824 UTC,2018-09-05 09:31:32.602498 UTC,PPM-50,25000.00,INITIATED,0,,,,0f0c1f010cc54e7ea86316a8a5fe0e12,midtrans,,,,,,,,,,2026-10-20 17:26:41.423755 UTC

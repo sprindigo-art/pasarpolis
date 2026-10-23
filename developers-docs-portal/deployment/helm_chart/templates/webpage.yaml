@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: developers-portal-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: developers-portal
+  template:
+    metadata:
+      labels:
+        app: developers-portal
+    spec:
+      containers:
+        - name: developers-portal-container
+          image: 930338548887.dkr.ecr.ap-southeast-3.amazonaws.com/pp-developers-docs-portal:{{ .Values.DevelopersDocsPortalTag }}
+          ports:
+            - name: web-port
+              containerPort: 80
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 30
+            periodSeconds: 60
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 30
+            periodSeconds: 60

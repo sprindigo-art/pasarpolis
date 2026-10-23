@@ -1,0 +1,91 @@
+"use strict";(self.webpackChunkcontrolpanel=self.webpackChunkcontrolpanel||[]).push([[301],{80301:(e,t,r)=>{r.r(t),r.d(t,{default:()=>he});var s=r(1502),a=r(24952),o=r(67816),i=r(80878),n=r.n(i);const l=n().div`
+  padding: 12px;
+  .heading {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  /* .select {
+    width: 200px;
+  }
+  .select-multi {
+    width: 400px;
+  } */
+  .ant-select {
+    margin-right: 4px;
+  }
+  .ant-btn {
+    min-width: 120px;
+    border-radius: 2px;
+  }
+  .ant-row-flex {
+    margin-bottom: 8px;
+  }
+  .ant-steps {
+    margin-bottom: 10px;
+    margin-top: 6px;
+  }
+  .back-button {
+    margin-top: 12px;
+  }
+`,d=n().div`
+  padding: 12px;
+  .heading {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  /* .select {
+    width: 400px;
+  }
+  .select-multi {
+    width: 600px;
+  } */
+  .ant-select {
+    margin-right: 4px;
+  }
+  .ant-btn {
+    min-width: 120px;
+    border-radius: 2px;
+  }
+  .ant-row-flex {
+    margin-bottom: 8px;
+  }
+`,p=n().div`
+  .template-container {
+    padding: 4px;
+    /* border-bottom: 1px solid #a9a9a9; */
+    min-width: 600px;
+  }
+  .template-header {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .template-content {
+    padding-left: 4px;
+  }
+  .head {
+    font-weight: 600;
+    margin-left: 4px;
+  }
+`,c=n().div`
+  .error-message {
+    color: red;
+  }
+  .display-block {
+    display:block;
+  }
+  .remove-image {
+    cursor:pointer;
+    color:#ff0000;
+    margin-left: 12px;
+    font-weight: 600;
+  }
+  .ant-upload-text {
+    width: 60%;
+    margin-left: 20%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+`,h=n().div``;var g=r(79209),u=r(25211),m=r(95916),E=r(57561),x=r(96117),R=r(87291),L=r(70579);const{Option:S}=o.Select,{getProducts:f,getPartners:C}=u.A,{getPackageList:_}=E.A,{resetLoadingRedux:T}=x.A,{resetErrorRedux:P}=R.A,{getFileTemplates:F}=g.A;class U extends s.Component{constructor(e){super(e),this.handleSubmit=e=>{e.preventDefault(),this.props.form.validateFields(((e,t)=>{if(!e){this.props.stepStateChange("process");let e=(0,m.get)(t,"product");e&&(e.sort(),t.product=e.join(",")),this.props.getFileTemplates({query:{...t}})}}))},this.handleClear=()=>{this.props.form.resetFields()},this.handlePartnerChange=e=>{this.props.form.resetFields(["product_code","package_code"]),this.props.getProducts({query:{partner_code:e}}),this.setState({partnerCode:e})},this.onSelectProduct=e=>{this.props.getPackageList(e)},this.handlePackageSelect=e=>{const{form:t,packageList:r}=this.props;if("all"===e){const e=(0,m.map)(r,"package_code");t.setFieldsValue({package_code:e})}},this.state={}}componentDidMount(){this.props.resetLoadingRedux(["GET_FILE_TEMPLATES"]),this.props.resetErrorRedux(["GET_FILE_TEMPLATES"])}componentWillReceiveProps(e){!1===e.fileTemplatesLoading&&(!1===e.fileTemplatesError?e.fileTemplates.length>0?this.props.nextStep():o.notification.error({message:"No File Templates found"}):(o.notification.error({message:"Error while fetching File templates"}),this.props.stepStateChange("error")),this.props.resetLoadingRedux(["GET_FILE_TEMPLATES"]),this.props.resetErrorRedux(["GET_FILE_TEMPLATES"]))}render(){const{partners:e,partnersLoading:t,form:r,products:s,fileTemplatesLoading:a,productsLoading:i}=this.props,{partnerCode:n}=this.state,{getFieldDecorator:l}=r;return(0,L.jsx)(d,{children:(0,L.jsx)(o.Spin,{spinning:!!a,children:(0,L.jsxs)(o.Form,{onSubmit:this.handleSubmit,className:"login-form",labelCol:{xs:{span:24},sm:{span:4}},wrapperCol:{xs:{span:24},sm:{span:16}},children:[(0,L.jsx)(o.Form.Item,{label:"Partner",children:l("partner",{rules:[{required:!0,message:"Please choose partner!"}]})((0,L.jsx)(o.Select,{placeholder:"Partner",className:"select",showSearch:!0,filterOption:(e,t)=>t.props.children.join("").toLowerCase().includes(e.toLowerCase()),onChange:this.handlePartnerChange,loading:!!t,disabled:!!t,children:e.map((e=>{let{name:t,code:r}=e;return(0,L.jsxs)(S,{value:r,children:[t," - ",r]},r)}))}))}),(0,L.jsx)(o.Form.Item,{label:"Product",children:l("product")((0,L.jsx)(o.Select,{placeholder:"Product",className:"select",showSearch:!0,mode:"multiple",onSelect:this.onSelectProduct,filterOption:(e,t)=>t.props.children.toLowerCase().indexOf(e.toLowerCase())>=0,loading:!!i,disabled:!!i||e.length<1||!n,children:s.map((e=>{let{name:t,display_name:r}=e;return(0,L.jsx)(S,{value:t,children:r},r)}))}))}),(0,L.jsxs)(o.Row,{type:"flex",justify:"space-around",children:[(0,L.jsx)(o.Button,{type:"danger",onClick:this.handleClear,children:"Clear"}),(0,L.jsx)(o.Button,{type:"primary",htmlType:"submit",className:"login-form-button",children:"Choose File Template"})]})]})})})}}U.defaultProps={partners:[],products:[],internalUsers:[]};const N=o.Form.create()(U),j=(0,a.connect)((e=>({partners:e.Policy.partners,products:e.Policy.products,partnersLoading:e.Loading.GET_PARTNERS,partnersError:e.Error.GET_PARTNERS,productsLoading:e.Loading.GET_PRODUCTS,productsError:e.Error.GET_PRODUCTS,packageList:e.PromoDetails.packageLists,packageListLoading:e.Loading.GET_COUPON_PACKAGE_LIST,packageListError:e.Error.GET_COUPON_PACKAGE_LIST,fileTemplatesLoading:e.Loading.GET_FILE_TEMPLATES,fileTemplatesError:e.Error.GET_FILE_TEMPLATES,fileTemplates:e.Recon.fileTemplates})),{getProducts:f,getPackageList:_,resetLoadingRedux:T,resetErrorRedux:P,getPartners:C,getFileTemplates:F})(N);class A extends s.Component{constructor(){super(...arguments),this.state={templateId:"",partner:"",product:""},this.handleNext=()=>{const{templateId:e,partner:t,product:r}=this.state;""!==e?(this.props.nextStep(e),this.props.saveTemplate(t,r)):o.notification.error({message:"Please select Template to continue"})},this.handleChange=e=>{const t=e.target.value,r=JSON.parse(t);this.setState({templateId:r.id,partner:r.partner,product:r.product})}}render(){const{fileTemplates:e}=this.props;return(0,L.jsxs)(p,{children:[(0,L.jsx)(o.Radio.Group,{onChange:this.handleChange,children:e.map((e=>(0,L.jsxs)(o.Row,{type:"flex",align:"middle",children:[(0,L.jsx)(o.Radio,{value:JSON.stringify(e)}),(0,L.jsxs)("div",{className:"template-container",children:[(0,L.jsx)("div",{className:"template-header",children:e.name.toUpperCase()}),(0,L.jsxs)("div",{className:"template-content",children:[(0,L.jsx)("span",{className:"head",children:"Partner -"})," ",e.partner]}),(0,L.jsxs)("div",{className:"template-content",children:[(0,L.jsx)("span",{className:"head",children:"Product -"})," ",(0,m.get)(e,"display_name",[]).join(", ")]}),(0,L.jsxs)("div",{className:"template-content",children:[(0,L.jsx)("span",{className:"head",children:"Package -"})," ",e.package||"All"]})]})]},e.id)))}),(0,L.jsx)(o.Row,{type:"flex",justify:"end",children:(0,L.jsx)(o.Button,{type:"primary",onClick:this.handleNext,children:"Next"})})]})}}const D=(0,a.connect)((e=>({fileTemplates:e.Recon.fileTemplates})),{})(A);var O=r(86178),I=r.n(O),b=r(15643);const G=o.Select.Option,v=o.Upload.Dragger,{createRecon:w,resetReduxStateRecon:k,uploadReconFiles:y,generateSignedUrl:M,reconUploadFile:Y}=g.A,{getProducts:q}=u.A,{getInternalUsers:B}=b.A,{getPackageList:V}=E.A,{resetLoadingRedux:K}=x.A,{resetErrorRedux:z}=R.A;class $ extends s.Component{constructor(e){super(e),this.handleSubmit=e=>{e.preventDefault(),this.props.form.validateFields(((e,t)=>{if(!e){const{templateId:e,partner:r,product:s}=this.props,{uploadedFiles:a}=this.state,{from_date:i,to_date:n}=t;delete t.file;const l=i.format("YYYY-MM-DD"),d=n.format("YYYY-MM-DD"),p=a.filter((e=>e.url)).map((e=>({...e,url:e.url})));if(0===p.length)return void o.notification.error({message:"Please wait for files to finish uploading"});let c={...t,from_date:l,to_date:d,report_recipients:t.report_recipients.toString(),files:p,templateId:e,partner:r,product:s};this.props.createRecon({body:c})}}))},this.changeValidFrom=(e,t)=>{this.setState({validFrom:t,validToEnable:!0},this.props.form.resetFields(["to_date"]))},this.changeValidTo=(e,t)=>{this.setState({validTo:t})},this.disabledValidTo=e=>e<I()(this.state.validFrom)||e>I()(),this.disabledDate=e=>e&&e>I()(),this.onFileChange=e=>{const{partner:t,product:r}=this.props,{uploadedFiles:s}=this.state,{file:a}=e,o={};o.name=a.name,o.size=a.size,o.type=a.type,this.setState({uploadFileLoading:!0}),this.setState({uploadedFiles:[...s,{filename:a.name,file:a.originFileObj}]}),this.props.generateSignedUrl({formData:o,partner:t,product:r})},this.removeFile=e=>{const{uploadedFiles:t,count:r}=this.state,s=t.filter((t=>t.url&&!t.url.includes(e)));this.setState({uploadedFiles:s,count:r-1})},this.state={uploadedFiles:[],uploadFileLoading:!1,count:0}}componentDidMount(){this.props.resetLoadingRedux(["POST_CREATE_RECON","GENERATE_SIGNED_URL","RECON_FILE_UPLOAD"]),this.props.resetErrorRedux(["POST_CREATE_RECON","GENERATE_SIGNED_URL","RECON_FILE_UPLOAD"])}componentWillReceiveProps(e){const{postCreateReconLoading:t,postCreateReconError:r,postCreateReconMessage:s}=e,{uploadedFiles:a,count:i}=this.state;if(!1===t){const e=!!r,t=e?"error":"success";e||this.props.nextStep(),o.notification[t]({title:t,message:s}),this.props.resetLoadingRedux(["POST_CREATE_RECON"]),this.props.resetErrorRedux(["POST_CREATE_RECON"]),this.props.resetReduxStateRecon(["postCreateReconMessage"])}if(!1===e.generateSignedUrlLoading){if(!1===e.generateSignedUrlError){let t=-1;if(a.forEach(((r,s)=>{var a;const o=r.filename.replace(/\.[^/.]+$/,"");null!==(a=e.signedUrl.filename)&&void 0!==a&&a.includes(o)&&(t=s)})),-1!==t){const r=a[t].file,s={...a[t],...e.signedUrl,file:r},o=[...a];o[t]=s,this.setState({uploadedFiles:o}),this.props.reconUploadFile({url:e.signedUrl.signed_url,file:r})}else this.setState({uploadFileLoading:!1})}else o.notification.error({message:e.generateSignedUrlStatus}),this.setState({uploadFileLoading:!1});this.props.resetLoadingRedux(["GENERATE_SIGNED_URL"]),this.props.resetErrorRedux(["GENERATE_SIGNED_URL"])}!1===e.uploadFilesLoading&&e.uploadFilesError&&(o.notification.error({message:"Error occured while uploading file."}),this.removeFile(e.failedFileData.url),this.props.resetLoadingRedux(["RECON_FILE_UPLOAD"]),this.props.resetErrorRedux(["RECON_FILE_UPLOAD"])),!1===e.uploadFilesLoading&&!1===e.uploadFilesError&&(this.setState({uploadFileLoading:!(a.length===i+1),count:i+1}),this.props.resetLoadingRedux(["RECON_FILE_UPLOAD"]),this.props.resetErrorRedux(["RECON_FILE_UPLOAD"]))}render(){const{internalUsers:e,internalUsersLoading:t,postCreateReconLoading:r,form:s}=this.props,{validFrom:a,uploadedFiles:i,uploadFileLoading:n}=this.state,{getFieldDecorator:l}=s;return(0,L.jsx)(c,{children:(0,L.jsx)(o.Spin,{spinning:!!r,children:(0,L.jsxs)(o.Form,{onSubmit:this.handleSubmit,className:"login-form",labelCol:{xs:{span:24},sm:{span:4}},wrapperCol:{xs:{span:24},sm:{span:16}},children:[(0,L.jsx)(o.Form.Item,{label:"Recon Name",children:l("recon_name",{rules:[{required:!0,message:"Please input recon title!"}]})((0,L.jsx)(o.Input,{placeholder:"Recon Name"}))}),(0,L.jsx)(o.Form.Item,{label:"Report Recipients",children:l("report_recipients",{rules:[{required:!0,message:"Please choose report recipients!"}]})((0,L.jsx)(o.Select,{placeholder:"Report Recipients",mode:"multiple",showSearch:!0,filterOption:(e,t)=>t.props.value.toLowerCase().indexOf(e.toLowerCase())>=0,loading:!!t,disabled:!!t,children:e.map((e=>{let{email:t,name:r}=e;return(0,L.jsx)(G,{value:t,children:r?`${r}-${t}`:t},t)}))}))}),(0,L.jsx)(o.Form.Item,{label:"From Date",children:l("from_date",{rules:[{required:!0,message:"Please select from date!"}]})((0,L.jsx)(o.DatePicker,{format:"YYYY-MM-DD",onChange:this.changeValidFrom,placeholder:"From Date",disabledDate:this.disabledDate}))}),(0,L.jsx)(o.Form.Item,{label:"To Date",children:l("to_date",{rules:[{required:!0,message:"Please select To Date!"}]})((0,L.jsx)(o.DatePicker,{format:"YYYY-MM-DD",disabledDate:this.disabledValidTo,disabled:!a,onChange:this.changeValidTo,placeholder:"To Date"}))}),(0,L.jsx)(o.Form.Item,{label:"Upload File",children:l("file",{rules:[{required:!0,message:"Please select file!"}]})((0,L.jsxs)(v,{customRequest:()=>!0,showUploadList:!1,multiple:!0,accept:"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,.csv",onChange:this.onFileChange,children:[(0,L.jsx)("p",{className:"ant-upload-drag-icon",children:(0,L.jsx)(o.Icon,{type:"inbox"})}),(0,L.jsx)("p",{children:"Click or drag file to this area to upload"})]}))}),(0,L.jsx)(o.Spin,{spinning:!!n,children:i&&i.map((e=>(0,L.jsx)("div",{children:(0,L.jsxs)(o.Row,{type:"flex",children:[(0,L.jsx)("p",{className:"ant-upload-text",children:e.filename}),(0,L.jsx)("span",{className:"remove-image",onClick:()=>this.removeFile(e.url),children:"X"})]})},e.filename)))}),(0,L.jsx)(o.Row,{type:"flex",justify:"end",children:(0,L.jsx)(o.Button,{disabled:n,type:"primary",htmlType:"submit",className:"login-form-button",children:"Submit"})})]})})})}}const J=o.Form.create()($),W=(0,a.connect)((e=>({partners:e.Policy.partners,products:e.Policy.products,internalUsers:e.User.internalUsers,partnersLoading:e.Loading.GET_PARTNERS,partnersError:e.Error.GET_PARTNERS,productsLoading:e.Loading.GET_PRODUCTS,productsError:e.Error.GET_PRODUCTS,internalUsersLoading:e.Loading.GET_INTERNAL_USERS,internalUsersError:e.Error.GET_INTERNAL_USERS,postCreateReconLoading:e.Loading.POST_CREATE_RECON,postCreateReconError:e.Error.POST_CREATE_RECON,postCreateReconMessage:e.Recon.postCreateReconMessage,packageList:e.PromoDetails.packageLists,packageListLoading:e.Loading.GET_COUPON_PACKAGE_LIST,packageListError:e.Error.GET_COUPON_PACKAGE_LIST,generateSignedUrlLoading:e.Loading.GENERATE_SIGNED_URL,generateSignedUrlError:e.Error.GENERATE_SIGNED_URL,generateSignedUrlStatus:e.Recon.signedUrlStatus,signedUrl:e.Recon.signedUrl,uploadFilesLoading:e.Loading.RECON_FILE_UPLOAD,uploadFilesError:e.Error.RECON_FILE_UPLOAD,failedFileData:e.Recon.failedFileData})),{resetReduxStateRecon:k,getProducts:q,getPackageList:V,getInternalUsers:B,createRecon:w,uploadReconFiles:y,resetLoadingRedux:K,resetErrorRedux:z,generateSignedUrl:M,reconUploadFile:Y})(J);class X extends s.Component{constructor(){super(...arguments),this.onClickShowDetail=()=>{const{createRecon:e}=this.props;this.props.history.push(`lists/${e.id}`)}}render(){return(0,L.jsx)(h,{children:(0,L.jsx)(o.Result,{status:"success",title:"Recon request created successfully!",extra:[(0,L.jsx)(o.Button,{type:"primary",onClick:this.onClickShowDetail,children:"View Recon Details"}),(0,L.jsx)(o.Button,{onClick:()=>this.props.resetData(),children:"Create Another Recon Request"})]})})}}const H=(0,a.connect)((e=>({createRecon:e.Recon.createRecon})),{})(X),{createRecon:Q,uploadReconFiles:Z,generateSignedUrl:ee,reconUploadFile:te}=g.A,{getProducts:re,getPartners:se}=u.A,{getInternalUsers:ae}=b.A,{getPackageList:oe}=E.A,{resetLoadingRedux:ie}=x.A,{resetErrorRedux:ne}=R.A,{Step:le}=o.Steps,de={current:0,templateId:"",stepsConfig:[{title:"Basic Form",status:"process",icon:"form"},{title:"Choose Template",status:"wait",icon:"container"},{title:"Fill Details",status:"wait",icon:"snippets"},{title:"Done",status:"wait",icon:"smile-o"}],partner:"",product:""};class pe extends s.Component{constructor(e){super(e),this.nextStep=e=>{const{current:t,stepsConfig:r}=this.state,s=r;s[t].status="finish",s[t+1].status="process",this.setState({stepsConfig:s,current:t+1}),e&&this.setState({templateId:e})},this.handlePrevious=()=>{const{current:e,stepsConfig:t}=this.state,r=t;r[e].status="wait",r[e-1].status="process",this.setState({stepsConfig:r,current:e-1})},this.stepStateChange=e=>{const{current:t,stepsConfig:r}=this.state,s=r;s[t].status=e,this.setState({stepsConfig:s})},this.resetData=()=>{this.setState(de)},this.saveTemplate=(e,t)=>{this.setState({partner:e,product:t})},this.state=de}componentDidMount(){const{partners:e}=this.props;e.length<1&&this.props.getPartners(),this.props.getProducts(),this.props.getInternalUsers()}render(){const{history:e}=this.props,{current:t,stepsConfig:r,templateId:s,partner:a,product:i}=this.state;return(0,L.jsx)(l,{children:(0,L.jsxs)(o.Card,{children:[(0,L.jsx)("div",{className:"heading",children:"Create Recon"}),(0,L.jsx)(o.Steps,{current:t,children:r.map(((e,t)=>{let{title:r,status:s,icon:a}=e;return(0,L.jsx)(le,{status:s,title:r,icon:(0,L.jsx)(o.Icon,{type:a})},t)}))}),0===t&&(0,L.jsx)(o.Card,{children:(0,L.jsx)(j,{nextStep:this.nextStep,stepStateChange:this.stepStateChange})}),1===t&&(0,L.jsx)(o.Card,{children:(0,L.jsx)(D,{nextStep:this.nextStep,stepStateChange:this.stepStateChange,saveTemplate:this.saveTemplate})}),2===t&&(0,L.jsx)(o.Card,{children:(0,L.jsx)(W,{nextStep:this.nextStep,stepStateChange:this.stepStateChange,templateId:s,partner:a,product:i})}),3===t&&(0,L.jsx)(o.Card,{children:(0,L.jsx)(H,{nextStep:this.nextStep,stepStateChange:this.stepStateChange,history:e,resetData:this.resetData})}),0!==t&&3!==t&&(0,L.jsx)(o.Button,{onClick:this.handlePrevious,className:"back-button",children:"Back"})]})})}}const ce=o.Form.create()(pe),he=(0,a.connect)((e=>({partners:e.Policy.partners,products:e.Policy.products,internalUsers:e.User.internalUsers,partnersLoading:e.Loading.GET_PARTNERS,partnersError:e.Error.GET_PARTNERS,productsLoading:e.Loading.GET_PRODUCTS,productsError:e.Error.GET_PRODUCTS,internalUsersLoading:e.Loading.GET_INTERNAL_USERS,internalUsersError:e.Error.GET_INTERNAL_USERS,postCreateReconLoading:e.Loading.POST_CREATE_RECON,postCreateReconError:e.Error.POST_CREATE_RECON,postCreateReconMessage:e.Recon.postCreateReconMessage,packageList:e.PromoDetails.packageLists,packageListLoading:e.Loading.GET_COUPON_PACKAGE_LIST,packageListError:e.Error.GET_COUPON_PACKAGE_LIST,generateSignedUrlLoading:e.Loading.GENERATE_SIGNED_URL,generateSignedUrlError:e.Error.GENERATE_SIGNED_URL,generateSignedUrlStatus:e.Recon.signedUrlStatus,signedUrl:e.Recon.signedUrl,uploadFilesLoading:e.Loading.RECON_FILE_UPLOAD,uploadFilesError:e.Error.RECON_FILE_UPLOAD,failedFileData:e.Recon.failedFileData})),{getPartners:se,getProducts:re,getPackageList:oe,getInternalUsers:ae,createRecon:Q,uploadReconFiles:Z,resetLoadingRedux:ie,resetErrorRedux:ne,generateSignedUrl:ee,reconUploadFile:te})(ce)}}]);
+//# sourceMappingURL=301.b8d60272.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcontrolpanel=self.webpackChunkcontrolpanel||[]).push([[6666],{66666:(e,n,s)=>{s.r(n),s.d(n,{default:()=>i});var t=s(10501),l=s(70579);const a=e=>(0,l.jsx)(t.h,{...e,domainType:"blacklisted",title:"BlackListed Domains"});var c=s(4801);const i=function(e){return(0,l.jsx)(c.pi,{children:(0,l.jsx)(a,{...e})})}}}]);
+//# sourceMappingURL=6666.a5b18e0b.chunk.js.map

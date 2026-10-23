@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcontrolpanel=self.webpackChunkcontrolpanel||[]).push([[7457],{17457:(e,t,n)=>{n.r(t),n.d(t,{default:()=>r});var s=n(57649),i=n(70579);const c=e=>(0,i.jsx)(s.A,{...e,recipientType:"whitelisted",title:"WhiteListed Recipients"});var l=n(68250);const r=function(e){return(0,i.jsx)(l._p,{children:(0,i.jsx)(c,{...e})})}}}]);
+//# sourceMappingURL=7457.49966b7a.chunk.js.map

@@ -1,0 +1,21 @@
+id,payload,action_group_id,pub_trigger_id,success,remark,created_at,partner_code,product_key,updated_at,pub_tmpl_lang_id,_ingested_at
+1066314555,"{""Event"": ""policy-created""}",,,1,No triggers evaluated true for the event,2026-09-27 00:00:05.000000 UTC,gojek,personal-accident,2026-09-27 00:00:05.000000 UTC,,2026-09-29 04:01:21.805811 UTC
+1066314663,"{""Event"": ""policy-created""}",,,1,No triggers evaluated true for the event,2026-09-27 00:00:18.000000 UTC,gojek,personal-accident,2026-09-27 00:00:18.000000 UTC,,2026-09-29 04:01:21.805811 UTC
+1066314852,"{""Event"": ""policy-created""}",,,1,No triggers evaluated true for the event,2026-09-27 00:00:42.000000 UTC,gojek,personal-accident,2026-09-27 00:00:42.000000 UTC,,2026-09-29 04:01:21.805811 UTC
+1066314949,"{""Event"": ""policy-created""}",,,1,No triggers evaluated true for the event,2026-09-27 00:00:53.000000 UTC,gojek,personal-accident,2026-09-27 00:00:53.000000 UTC,,2026-09-29 04:01:21.805811 UTC
+1066314965,"{""Event"": ""policy-created""}",,,1,No triggers evaluated true for the event,2026-09-27 00:00:56.000000 UTC,gojek,personal-accident,2026-09-27 00:00:56.000000 UTC,,2026-09-29 04:01:21.805811 UTC
+1066315022,"{""Event"": ""policy-created""}",,,1,No triggers evaluated true for the event,2026-09-27 00:01:03.000000 UTC,gosend,logistic-insurance,2026-09-27 00:01:03.000000 UTC,,2026-09-29 04:01:21.805811 UTC
+1066315052,"{""Event"": ""policy-created""}",,,1,No triggers evaluated true for the event,2026-09-27 00:01:07.000000 UTC,gojek,personal-accident,2026-09-27 00:01:07.000000 UTC,,2026-09-29 04:01:21.805811 UTC
+1066315130,"{""Event"": ""policy-created""}",,,1,No triggers evaluated true for the event,2026-09-27 00:01:14.000000 UTC,gojek,personal-accident,2026-09-27 00:01:14.000000 UTC,,2026-09-29 04:01:21.805811 UTC
+1066315271,"{""Event"": ""policy-created""}",,,1,No triggers evaluated true for the event,2026-09-27 00:01:31.000000 UTC,gojek,personal-accident,2026-09-27 00:01:31.000000 UTC,,2026-09-29 04:01:21.805811 UTC
+1066315307,"{""Event"": ""policy-created""}",,,1,No triggers evaluated true for the event,2026-09-27 00:01:35.000000 UTC,gojek,personal-accident,2026-09-27 00:01:35.000000 UTC,,2026-09-29 04:01:21.805811 UTC
+1066315355,"{""Event"": ""policy-created""}",,,1,No triggers evaluated true for the event,2026-09-27 00:01:39.000000 UTC,gojek,personal-accident,2026-09-27 00:01:39.000000 UTC,,2026-09-29 04:01:21.805811 UTC
+1066315364,"{""Event"": ""policy-created""}",,,1,No triggers evaluated true for the event,2026-09-27 00:01:39.000000 UTC,gojek,personal-accident,2026-09-27 00:01:39.000000 UTC,,2026-09-29 04:01:21.805811 UTC
+1066315368,"{""Event"": ""policy-created""}",,,1,No triggers evaluated true for the event,2026-09-27 00:01:42.000000 UTC,gosend,logistic-insurance,2026-09-27 00:01:42.000000 UTC,,2026-09-29 04:01:21.805811 UTC
+1066315466,"{""Event"": ""policy-created""}",,,1,No triggers evaluated true for the event,2026-09-27 00:01:52.000000 UTC,gojek,personal-accident,2026-09-27 00:01:52.000000 UTC,,2026-09-29 04:01:21.805811 UTC
+1066315547,"{""Event"": ""policy-created""}",,,1,No triggers evaluated true for the event,2026-09-27 00:02:00.000000 UTC,gojek,personal-accident,2026-09-27 00:02:00.000000 UTC,,2026-09-29 04:01:21.805811 UTC
+1066315560,"{""Event"": ""policy-created""}",,,1,No triggers evaluated true for the event,2026-09-27 00:02:00.000000 UTC,gojek,personal-accident,2026-09-27 00:02:00.000000 UTC,,2026-09-29 04:01:21.805811 UTC
+1066315593,"{""Event"": ""policy-created""}",,,1,No triggers evaluated true for the event,2026-09-27 00:02:04.000000 UTC,gojek,personal-accident,2026-09-27 00:02:04.000000 UTC,,2026-09-29 04:01:21.805811 UTC
+1066315642,"{""Event"": ""policy-created""}",,,1,No triggers evaluated true for the event,2026-09-27 00:02:10.000000 UTC,gojek,personal-accident,2026-09-27 00:02:10.000000 UTC,,2026-09-29 04:01:21.805811 UTC
+1066315839,"{""Event"": ""policy-created""}",,,1,No triggers evaluated true for the event,2026-09-27 00:02:32.000000 UTC,gojek,personal-accident,2026-09-27 00:02:32.000000 UTC,,2026-09-29 04:01:21.805811 UTC
+1066315890,"{""Event"": ""policy-created""}",,,1,No triggers evaluated true for the event,2026-09-27 00:02:36.000000 UTC,gojek,personal-accident,2026-09-27 00:02:36.000000 UTC,,2026-09-29 04:01:21.805811 UTC
