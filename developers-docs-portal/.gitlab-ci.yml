@@ -1,0 +1,3 @@
+include:
+    - project: 'pasarpolis/ci-templates'
+      file: 'main-gitlab-ci-aws.yaml'
