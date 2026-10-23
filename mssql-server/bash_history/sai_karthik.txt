@@ -1,0 +1,1091 @@
+cd /home/madhanlingareddy
+ls -l
+cd /home/madhanlingareddy
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+7z x 'AUS_DiffBackup_2025-02-16 2005.zip'
+cd /home/madhanlingareddy
+ls -l
+rm 'AUS_DiffBackup_2025-02-16 2005.zip'
+cd DIFF
+ls -l 
+mv SEA_AUS_backup_2025_02_16_190001_4087337.bak ..
+cd ..
+rm DIFF
+rm -r DIFF
+ls -l
+rm SEA_AUS_backup_2025_02_03_190001_5839794.bak
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+exit
+cd /home/madhanlingareddy
+ls -l
+pwd
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+pwd
+cd /home/madhanlingareddy
+ls -l
+cd /home/madhanlingareddy
+ls -l
+exit
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+ls -l
+rm SEA_AUS_backup_2025_02_16_190001_4087337.bak
+cd 
+ls -l
+mv 'AUS_DiffBackup_2025-02-27 2005.zip' /home/madhanlingareddy
+cd /home/madhanlingareddy
+clear
+ls -l
+7z x 'AUS_DiffBackup_2025-02-27 2005.zip'
+clear
+ls -l
+cd DIFF
+ls -l
+mv SEA_AUS_backup_2025_02_27_190001_4020461.bak ..
+cd ..
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+sudo chown $USER "/Users/karthikpp/Downloads/Policy Documents/aus5.pdf"
+ls -l "/Users/karthikpp/Downloads/Policy Documents/aus5.pdf"
+pwd
+cd /home/madhanlingareddy
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls 0l
+ls -l
+rm 'AUS_DiffBackup_2025-02-27 2005.zip'
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+mv *AUS* /home/madhanlingareddy
+ls -l
+cd /home/madhanlingareddy
+ls -l
+rm SEA_AUS_backup_2025_01_31_191501_8476911.bak
+rm SEA_AUS_backup_2025_02_27_190001_4020461.bak
+rm -r DIFF
+7z x 'AUS_FullBackup_2025-03-01 0555.zip'
+ls -l
+rm *AUS_FullBackup_2025-03-01*
+ls -l
+7z x 'AUS_DiffBackup_2025-03-22 2005.zip'
+ls -l
+rm 'AUS_DiffBackup_2025-03-22 2005.zip'
+cd FULL
+ls -l
+mv SEA_AUS_backup_2025_02_28_191500_7764843.bak ..
+cd ..
+cd DIFF
+ls -l
+mv SEA_AUS_backup_2025_03_22_190001_1945150.bak ..
+ls -l
+cd ..
+clear
+ls -l
+clear
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+cd /home/madhanlingareddy
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+ls -lhrt
+rm 'AUS_FullBackup_2025-03-29 0500.z05'
+ls -l
+cd /home/madhanlingareddy
+ls -l
+df -h
+rm SEA_AUS_backup_2025_02_28_191500_7764843.bak
+rm SEA_AUS_backup_2025_03_22_190001_1945150.bak
+clear
+ls -l
+rm -r DIFF
+rm -r FULL
+clear
+df -h
+cd
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+mv *AUS* /home/madhanlingareddy
+cd /home/madhanlingareddy
+ls -l
+clear
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+7z x 'AUS_FullBackup_2025-03-29 0500.zip'
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+ls
+cd FULL
+clear
+ls -l
+mv SEA_AUS_backup_2025_03_28_191501_3562807.bak ..
+cd ..
+clear
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+7z x 'AUS_DiffBackup_2025-04-07 2005.zip'
+cleaer
+clear
+ls -l
+rm *AUS_FULL*
+rm *AUS_Full*
+ls -l
+rm -r FULL
+cd DIFF
+ls -l
+mv SEA_AUS_backup_2025_04_07_190002_9321975.bak ..
+clear
+ls -l
+cd ..
+clear
+
+rm -r DIFF
+rm 'AUS_DiffBackup_2025-04-07 2005.zip'
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+exit
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+mv 'AUS_DiffBackup_2025-04-16 2005.zip' /home/madhanlingareddy
+cd /home/madhanlingareddy
+clear
+ls -l
+rm SEA_AUS_backup_2025_04_07_190002_9321975.bak
+ls -l
+7z x 'AUS_DiffBackup_2025-04-16 2005.zip'
+ls -l
+cd DIFF
+ls -l
+mv SEA_AUS_backup_2025_04_16_190007_8671008.bak ..
+cd ..
+rm DIFF
+rm -r DIFF
+clear
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+clear
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+rm SEA_AUS_backup_2025_03_28_191501_3562807.bak
+rm 'AUS_DiffBackup_2025-04-16 2005.zip'
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+mv AUS* /home/madhanlingareddy
+ls -l
+clear
+cd /home/madhanlingareddy
+ls -l
+7z x 'AUS_FullBackup_2025-03-29 0500.zip'
+ls -l
+rm AUS_FullBackup_2025-03-29*
+clear
+ls -l
+cd FULL
+mv * ..
+cd ..
+ls -l
+rm -r FULL
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+clear
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+exit
+cd /home/madhanlingareddy
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+cd /home/madhanlingareddy
+ls -l
+rm SEA_AUS_backup_2025_03_28_191501_3562807.bak
+rm SEA_AUS_backup_2025_04_16_190007_8671008.bak
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+7z  x 'AUS_FullBackup_2025-04-27 1826.zip'
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+exit
+cd /home/madhanlingareddy
+ls -l
+7z x 'AUS_DiffBackup_2025-05-02 2005.zip'
+ls -l
+rm *AUS_Full~*
+rm *AUS_Full*
+rm *AUS_Diff*
+ls -l
+cd DIFF
+ls -l
+mv * ..
+ls -l
+cd ..
+cd FULL
+cd * ..
+mv * ..
+cd ..
+clear
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+cd /home/madhanlingareddy
+ls -l
+rm SEA_AUS_backup_2025_05_02_190005_5646534.bak
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P backupaus@2023 2031 adminaus@aspstore.care.co.id
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+rm -r DIFF
+rm -r FULL
+get 'SEA_AUS_backup_2025_04_25_191501_1390691.bak'
+7z x 'SEA_AUS_backup_2025_04_25_191501_1390691.bak'
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P backupaus@2023 2031 adminaus@aspstore.care.co.id
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+7z x 'AUS_DiffBackup_2025-05-15 2005.zip '
+7z x 'AUS_DiffBackup_2025-05-15 2005.zip'
+ls -l
+mv DIFF /home/madhanlingareddy
+ls -l
+cd /home/madhanlingareddy
+ls -l
+rm AUS_DiffBackup_2025*
+ls -l
+cd DIFF
+mv * ..
+cd ..
+ls -l
+rm -r DIFF
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+cd /home/madhanlingareddy
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+7z x 'AUS_DiffBackup_2025-05-20 2005.zip'
+cd /home/madhanlingareddy
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+rm 'AUS_DiffBackup_2025-05-20 2005.zip'
+rm -r DIFF
+rm SEA_AUS_backup_2025_05_15_190000_8936216.bak
+clear
+ls -l
+7z x 'AUS_DiffBackup_2025-05-25 2005.zip'
+ls -l
+cd DIFF
+ls -l
+mv SEA_AUS_backup_2025_05_25_190000_7315545.bak ..
+ls -l
+cd ..
+rm -r DIFF
+clear
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+cd /home/madhanlingareddy
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+rm 'AUS_DiffBackup_2025-05-25 2005.zip'
+rm SEA_AUS_backup_2025_04_25_191501_1390691.bak
+rm SEA_AUS_backup_2025_05_25_190000_7315545.bak
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+7z x 'AUS_FullBackup_2025-06-02 0240.zip'
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+7z x 'AUS_DiffBackup_2025-06-04 2005.zip'
+clear
+ls -l
+cd FULL
+ls -l
+mv SEA_AUS_backup_2025_05_30_191501_3744644.bak ..
+cd ..
+cd DIFF
+mv * ..
+cd ..
+clear
+ls -l
+rm 'AUS_DiffBackup_2025-06-04 2005.zip'
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+rm 'AUS_DiffBackup_2025-05-15 2005.zip'
+7z x 'AUS_DiffBackup_2025-06-15 2005.zip'
+mv * /home/madhanlingareddy
+cd /home/madhanlingareddy
+ls -l
+cd FULL
+ls -l
+cd ..
+clear
+ls -l
+rm SEA_AUS_backup_2025_06_04_190004_9537420.bak
+cd DIFF
+ls -l
+mv SEA_AUS_backup_2025_06_15_190002_7571567.bak ..
+cd ..
+rm -r DIFF
+clear
+ls -l
+rm 'AUS_FullBackup_2025*'
+rm -r 'AUS_FullBackup_2025*'
+rm AUS_FullBackup_2025*
+ls -l
+rm 'AUS_DiffBackup_2025-06-15 2005.zip'
+clear
+ls -l
+rm -r FULL
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+ls -l
+cd /home/madhanlingareddy
+ls -l
+rm SEA_AUS_backup_2025_06_15_190002_7571567.bak
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+ls -l
+rm 'AUS_DiffBackup_2025-06-19 2005.zip'
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+ls -l
+7z x 'AUS_DiffBackup_2025-06-24 2005.zip'
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+ls -l
+cd DIFF
+ls -l
+mv SEA_AUS_backup_2025_06_24_190003_5005148.bak ..
+cd ..
+ls -l
+rm -r DIFF
+rm 'AUS_DiffBackup_2025-06-24 2005.zip'
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+cd /home/madhanlingareddy
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+rm /var/opt/mssql/data/sea_aus.mdf
+sudo rm /var/opt/mssql/data/sea_aus.mdf
+cd /var/opt/mssql/data/
+sudo ls -lah /var/opt/mssql/data/
+sudo rm /var/opt/mssql/data/SEA_AUS.mdf
+sudo rm /var/opt/mssql/data/SEA_AUS_log.ldf
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+cd /home/madhanlingareddy
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+ls -l
+rm 'AUS_FullBackup_2025-06-29 1358.z02'
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+ls l
+ls -l
+rm 'AUS_DiffBackup_2025-07-01 2005.zip'
+rm SEA_AUS_backup_2025_07_01_190001_2170802.bak
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+7z x 'AUS_DiffBackup_2025-07-06 2005.zip'
+ls -l
+cd DIFF
+mv * ..
+cd ..
+rm -r DIFF
+ls -l
+rm 'AUS_DiffBackup_2025-07-06 2005.zip'
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+cd /home/madhanlingareddy
+ls -l
+rm SEA_AUS_backup_2025_07_06_190001_5256518.bak
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+7z x 'AUS_DiffBackup_2025-07-14 2005.zip'
+ls -l
+cd DIFF
+mv * ..
+cd ..
+ls -l
+rm -r DIFF
+ls -l
+rm 'AUS_DiffBackup_2025-07-14 2005.zip'
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+clear
+ls -l
+cd /home/madhanlingareddy
+ls -l
+cat restore_aus_database.sh
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+7z x 'AUS_DiffBackup_2025-07-24 2005.zip'
+clear
+ls -l
+cd /home/madhanlingareddy
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+clear
+cd /home/madhanlingareddy
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+clea4
+clear
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+get 'AUS_FullBackup_2025-07-27 1855.z01'
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+clear
+cd /home/madhanlingareddy
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+clear
+ls -l
+rm -r DIFF
+rm SEA_AUS_backup_2025_06_27_191501_4174502.bak
+rm SEA_AUS_backup_2025_07_14_190001_1903169.bak
+clear
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+rm 'AUS_DiffBackup_2025-07-24 2005.zip'
+rm 'AUS_DiffBackup_2025-07-20 2005.zip'
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+clear
+ls -l
+7z x 'AUS_FullBackup_2025-07-27 1855.zip'
+ls -l
+7z x 'AUS_DiffBackup_2025-08-11 2005.zip'
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+ls -l
+cd DIFF
+ls -l
+mv * ..
+cd ..
+cd FULL
+mv * ..
+cd ..
+clear
+ls -l
+rm AUS_DiffBackup*
+ls -l
+rm *AUS_DiffBackup*
+rm AUS_FullBackup*
+clear
+ls -l
+rm -r DIFF
+rm -r FULL
+clear
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+clear
+cd /home/madhanlingareddy
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+clear
+ls -l
+cd /home/madhanlingareddy
+ls -l
+df -h
+clear
+ls -l
+cd /home/madhanlingareddy
+ls -l
+rm SEA_AUS_backup_2025_08*
+y
+clear
+ls -l
+AUS_FullBackup_2025-08*
+rm AUS_FullBackup_2025-08*
+y
+clear
+ls -l
+rm 'AUS_FullBackup_2025-07*'
+rm AUS_FullBackup_2025-07*
+clear
+ls -l
+rm AUS_DiffBackup_2025-08*
+ls -l
+rm 'AUS_DiffBackup_2025-08-01 2005.zip'
+rm -r DIFF
+rm -r FULL
+clear
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+ls -l
+rm SEA_AUS_backup_2025_07_25_191500_5000251.bak
+ls -l
+rm 'AUS_FullBackup_2025-09-01 0054.z01'
+cd /home/madhanlingareddy
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+ls -l
+7z x 'AUS_FullBackup_2025-09-01 0054.zip'
+7z x 'AUS_DiffBackup_2025-09-03 2005.zip'
+ls -l
+rm AUS_*
+ls -l
+cd FULL
+mv * ..
+cd ..
+cd DIFF
+mv * ..
+cd ..
+ls -l
+rm -r DIFF
+rm -r FULL
+ls -l
+exit
+ls =l
+ls -l
+clear
+cd /home/madhanlingareddy
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+sudo rm /var/opt/mssql/data/sea_aus.mdf
+sudo rm /var/opt/mssql/data/sea_aus_log.ldf
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+clear
+exit
+clear
+ls -l
+cd /home/madhanlingareddy
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+cd /home/madhanlingareddy
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+rm 'AUS_FullBackup_2025-09-01*'
+rm AUS_FullBackup_2025-09-01*
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+cd /home/madhanlingareddy
+ls -l
+rm AUS_FullBackup_2025-09-24*
+ls -l
+rm SEA_AUS_backup_2025_08_29_191500_7230550.bak
+rm SEA_AUS_backup_2025_09_03_190000_5620654
+rm SEA_AUS_backup_2025_09_03_190000_5620654.bak
+cd /home/madhanlingareddy
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+7z x AUS_FullBackup_2025-09-24 1552.zip
+clear
+ls -l
+7z x ''AUS_FullBackup_2025-09-24 1552.zip''
+7z x 'AUS_FullBackup_2025-09-24 1552.zip'
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+7z x 'AUS_DiffBackup_2025-09-25 2005.zip'
+clear
+ls -l
+cd FULL
+mv * ..
+cd ..
+ls -l
+rm AUS_FullBackup*
+ls -l
+mv DIFF *
+cd DIFF
+ls -l
+ms SEA_AUS_backup_2025_09_25_190001_1954101.bak ..
+mv SEA_AUS_backup_2025_09_25_190001_1954101.bak ..
+ls -l
+cd ..
+clear
+ls -l
+rm 'AUS_DiffBackup_2025-09-25 2005.zip'
+rm -r DIFF
+rm -r FULL
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+cd /home/madhanlingareddy
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+ls -l
+rm SEA_AUS_backup_2025_09_24_095916_2809829.bak
+ls -l
+rm SEA_AUS_backup_2025_09_25_190001_1954101.bak
+clear
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+cd /home/madhanlingareddy
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+ls -l
+7z x 'AUS_FullBackup_2025-09-27 1015.zip'
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+7z x 'AUS_DiffBackup_2025-10-14 2005.zip'
+ls -l
+rm 'AUS_DiffBackup_2025-10-14 2005.zip'
+rm 'AUS_FullBackup_2025-09-27*'
+rm AUS_FullBackup_2025-09-27*
+ls -l
+cd FULL
+ls -l
+mv * ..
+ls -l
+cd ..
+cd DIFF
+mv * ..
+ls -l
+cd ..
+ls -l
+rm -r DIFF
+rm -r FULL
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+exit
+cd full
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+ls -l
+rm 'SEA_AUS_backup_2025_09_26_191500_8188977.bak'
+rm SEA_AUS_backup_2025_10_14_190001_4716669.bak
+7z x 'AUS_FullBackup_2025-11-01 2228.zip'
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+7z x 'AUS_DiffBackup_2025-11-04 2005.zip'
+ls -l
+rm AUS_FullBackup*
+ls -l
+rm AUS_Diff*
+cd FULL
+mv * ..
+cd ../DIFF
+mv * ..
+cd ..
+ls -l\
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+exit
+clear
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+rm 'AUS_DiffBackup_2025-10-28 2005.zip'
+mv * /home/madhanlingareddy
+cd  /home/madhanlingareddy
+ls -l
+7z x 'AUS_DiffBackup_2025-11-24 2005.zip'
+ls -l
+cd DIFF
+ls -l
+cd ..
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+mv * /home/madhanlingareddy
+cd  /home/madhanlingareddy
+ls -l
+rm 'AUS_FullBackup_2025-11-01 2228.z01'
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+rm 'AUS_FullBackup_2025-11-01 2228.z02'
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+em 'AUS_FullBackup_2025-11-01 2228.z
+rm 'AUS_FullBackup_2025-11-01 2228.z01'
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+rm 'AUS_FullBackup_2025-11-01 2228.z01'
+cd /home/madhanlingareddy
+rm 'AUS_FullBackup_2025-11-01 2228.z01'
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+rm SEA_AUS_backup_2025_10_31_191501_1938763.bak
+rm SEA_AUS_backup_2025_11_04_190001_1380698.bak
+7z x 'AUS_FullBackup_2025-11-01 2228.zip'
+cd /home/madhanlingareddy
+ls -l
+cd FULL
+ls -l
+mv * ..
+cd ..
+ls- l
+ls -l
+rm 'AUS_FullBackup*'
+rm AUS_FullBackup*
+clear
+ls -l
+cd DIFF
+ls -l
+mv * ..
+cd ..
+ls -l
+rm -r DIFF
+rm -r FULL
+ls -l
+rm 'AUS_DiffBackup_2025-11-24 2005.zip'
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+cd /home/madhanlingareddy
+ls -l
+clear
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+ls -l
+7z x 'AUS_FullBackup_2025-11-29 0500.zip'
+ls -l
+rm 'AUS_FullBackup_2025-12-06 0817.zip'
+7z x 'AUS_DiffBackup_2025-12-08 2005.zip'
+ls -l
+rm 'AUS_FullBackup_2025-11-29*'
+rm AUS_FullBackup_2025-11-29*
+ls -l
+rm 'AUS_DiffBackup_2025-12-08 2005.zip'
+cd DIFF
+ls -l
+mv * ..
+cd ..
+cd FULL
+mv * ..
+cd ..
+clear
+ls -l
+rm SEA_AUS_backup_2025_10_31_191501_1938763.bak
+rm SEA_AUS_backup_2025_11_24_190001_0601298.bak
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+exit
+clear
+cd /home/madhanlingareddy
+ls -l
+rm SEA_AUS_backup_2025_11_28_191500_5144826.bak
+rm -r DIFF
+rm -r FULL
+rm SEA_AUS_backup_2025_12_08_190001_2899771.bak
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -
+ls -l
+7z x 'AUS_FullBackup_2025-12-27 1050.zip'
+cd /home/madhanlingareddy
+ls -l
+cd FULL
+mv * ..
+cd ..
+ls -l
+rm -r 'AUS_FullBackup_*'
+rm 'AUS_FullBackup_*'
+rm AUS_FullBackup_*
+rm -r FULL
+ls -l
+7z x 'AUS_DiffBackup_2026-01-12 2005.zip'
+ls -l
+cd DIFF
+mv * ..
+cd ..
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+rm 'AUS_DiffBackup_2026-01-12 2005.zip'
+7z x 'AUS_DiffBackup_2026-01-17 2005.zip'
+ls -l
+cd DIFF
+mv * ..
+cd ..
+ls -l
+rm 'SEA_AUS_backup_2026_01_12_190000_4805787.bak'
+rm 'AUS_DiffBackup_2026-01-17 2005.zip'
+ls -l
+rm -r DIFF
+clear
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+clear
+cd FULL
+ls -l
+exit
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+cd /home/madhanlingareddy
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+7z x 'AUS_FullBackup_2026-02-21 0913.zip'
+ls -l
+rm -r FULL
+rm 'AUS_FullBackup_2026-02-21 0913.zip'
+ls -l
+7z x 'AUS_FullBackup_2026-01-31 0547.zip'
+7z x 'AUS_DiffBackup_2026-02-23 2005.zip'
+ls -l
+rm SEA_AUS_backup_2025_12_26_191501_1455360.bak
+rm SEA_AUS_backup_2026_01_17_190000_9497605.bak
+cd FULL
+ls -l
+mv * ..
+cd ..
+cd DIFF
+mv * ..
+cd ..
+ls -l
+rm AUS_FullBackup*
+ls -l
+rm 'AUS_DiffBackup_2026-02-23 2005.zip'
+rm -r DIFF
+rm -r FULL
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+lsc-l
+ls -l
+cd /home/madhanlingareddy
+ls -l
+rm SEA_AUS_backup_2026_01_30_191500_7193693.bak
+rm SEA_AUS_backup_2026_02_23_190000_4863777.bak
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+7z x 'AUS_FullBackup_2026-03-28 1043.zip'
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+7z x 'AUS_FullBackup_2026-03-28 1043.zip'
+7z x 'AUS_DiffBackup_2026-04-17 2005.zip'
+ls -l
+rm 'AUS_DiffBackup_2026-04-17 2005.zip'
+rm AUS_FullBackup_*
+ls -l
+cd FULL
+mv * ..
+cd ..
+cd DIFF
+mv * ..
+cd ..
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+ls -l
+cd /home/madhanlingareddy
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+cd /home/madhanlingareddy
+ls -l
+rm -r DIFF
+rm -r FULL
+rm SEA_AUS_backup_2026_03_27_191500_9506724.bak
+rm SEA_AUS_backup_2026_04_17_190000_8977336.bak
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+7z x 'AUS_FullBackup_2026-04-25 1037.zip'
+ls -l
+7z x 'AUS_DiffBackup_2026-05-18 2005.zip'
+ls -k
+ls -l
+cd DIFF && mv * ..
+ls
+cd ..
+cd FULL && mv * .. && cd ..
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+cd /home/madhanlingareddy
+ls -l
+rm 'AUS_FullBackup*'
+rm AUS_FullBackup*
+ls -l
+rm 'AUS_DiffBackup_2026-05-18 2005.zip'
+rm -r DIFF
+rm -r FULL
+rm SEA_AUS_backup_2026_04_24_191501_0625309.bak
+rm SEA_AUS_backup_2026_05_18_190001_8518279
+rm SEA_AUS_backup_2026_05_18_190001_8518279.bak
+ls -k
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+7z x 'AUS_FullBackup_2026-05-30 1054.zip'
+ls -l
+7z x 'AUS_DiffBackup_2026-06-12 2005.zip'
+ls -l
+cd FULL && mv * ..
+cd ..
+cd DIFF && mv * .. && cd ..
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+cd /home/madhalingareddy
+exit
+cd /home/madhanlingareddy
+ls -l
+rm AUS_FullBackup_*
+ls -l
+rm -r DIFF
+rm -r FULL
+rm 'AUS_DiffBackup_2026-06-12 2005.zip'
+clear
+ls -l
+rm SEA_AUS_backup_2026_05_29_191501_2925838.bak
+rm SEA_AUS_backup_2026_06_12_190000_6658622.bak
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+clear
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+rm 'AUS_FullBackup_2026-07-11 1013.zip'
+7z x 'AUS_FullBackup_2026-06-27 1108.zip'
+7z x 'AUS_DiffBackup_2026-07-14 2005.zip'
+ls -l
+rm 'AUS_FullBackup*'
+rm AUS_FullBackup*
+rm 'AUS_DiffBackup_2026-07-14 2005.zip'
+ls -l
+cd DIFF
+mv * ..
+cd ..
+cd FULL
+mv * ..
+cd ..
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+cd /home/madhanlingareddy
+ls -l
+rm SEA_AUS_backup_2026_07_14_190000_8967650.bak
+rm -r DIFF
+rm -r FULL
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+exit
+cd /home/madhanlingareddy
+ls -l
+7z x 'AUS_DiffBackup_2026-07-20 2005.zip'
+ls -l
+cd DIFF && mv * .. && cd ..
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+exit
+cd /home/madhanlingareddy
+ls -l
+rm 'AUS_DiffBackup_2026-07-20 2005.zip'
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+rm SEA_AUS_backup_2026_07_20_190000_8066772.bak
+rm -r DIFF
+7z x 'AUS_DiffBackup_2026-07-22 2005.zip'
+ls -l
+cd DIFF && mv * .. && cd ..
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+cd /home/madhanlingareddy
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd FULL && mv * .. && cd ..
+7z x AUS_FullBackup_2026-06-27 1108.zip
+ls -l
+rm SEA_AUS_backup_2026_06_26_191500_6207227.bak
+rm SEA_AUS_backup_2026_07_22_190000_6853574.bak
+7z x 'AUS_FullBackup_2026-06-27 1108.zip'
+cd FULL && mv * .. && cd ..
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+exit
+cd /home/madhanlingareddy
+ls -l
+rm 'AUS_FullBackup*'
+rm AUS_FullBackup*
+rm AUS_D* 
+rm -r DIFF
+rm -r FULL
+ls -l
+rm SEA_AUS_backup_2026_06_26_191500_6207227.bak
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+cd /home/madhanlingareddy
+ls -l
+7z x 'AUS_FullBackup_2026-08-04 0903.zip'
+ls -l
+7z x 'AUS_DiffBackup_2026-08-10 2005.zip'
+ls -l
+cd FULL && mv * .. && cd .. && cd DIFF && mv * .. && cd .. && rm -r DIFF && rm -r FULL
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+cd /home/madhanlingareddy
+exit
+cd /home/madhanlingareddy
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+rm AUS_FullBackup_2026-08-04*
+ls -l
+rm 'AUS_DiffBackup_2026-08-10 2005.zip'
+rm SEA_AUS_backup_2026_08_03_091010_3540575.bak
+rm SEA_AUS_backup_2026_08_10_190001_5133518.bak
+ls -l
+7z x 'AUS_FullBackup_2026-08-29 0500.zip'
+ls -l
+7z x 'AUS_DiffBackup_2026-08-30 2005.zip'
+ls -l
+cd DIFF && mv * .. && cd .. && cd FULL && mv * .. && cd ..
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+ls -l
+cd /home/madhanlingareddy
+ls -l
+rm 'AUS_FullBackup_2026-08-29 0500.zip'
+rm 'AUS_DiffBackup_2026-08-30 2005.zip'
+rm AUS_FullBackup_*
+ls -l
+ls DIFF
+ls FULL
+rm -r DIFF
+rm -r FULL
+ls -l
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -;l
+ls -l
+7z x 'AUS_DiffBackup_2026-09-09 2005.zip'
+ls -l
+cd DIFF
+mv * ..
+cd ..
+ls -l
+rm SEA_AUS_backup_2026_08_30_190000_8149977.bak
+ls -l
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+sftp -oKexAlgorithms=+diffie-hellman-group1-sha1 -P 2031 adminaus@aspstore.care.co.id
+ls -l
+rm 'AUS_FullBackup_2026-01-31 0547.z01'
+cd /home/madhanlingareddy
+mv /'AUS_DiffBackup_2026-09-20 2005.zip' /home/madhsnlingareddy
+mv /'AUS_DiffBackup_2026-09-20 2005.zip' /home/madhsnlingareddy/'AUS_DiffBackup_2026-09-20 2005.zip'
+cd ../..
+ls -l
+cd
+ls -l
+'AUS_DiffBackup_2026-09-20 2005.zip'
+mv 'AUS_DiffBackup_2026-09-20 2005.zip' /home/madhanlingareddy
+cd /home/madhanlingareddy
+ls -l
+rm -r DIFF
+rm SEA_AUS_backup_2026_09_09_190000_5928349.bak
+7z x 'AUS_DiffBackup_2026-09-09 2005.zip'
+cd DIFF
+mv * ../
+cd ../
+ls -l
+rm 'AUS_DiffBackup_2026-09-09 2005.zip'
+rm 'AUS_DiffBackup_2026-09-20 2005.zip'
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo

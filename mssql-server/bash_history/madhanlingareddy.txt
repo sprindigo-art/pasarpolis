@@ -1,0 +1,512 @@
+ps -eaf | grep restore
+date
+crontab -e
+ls -lhrt logs
+tail -100f 20231123102001_restore.log
+tail -100f logs/20231123102001_restore.log
+ls -lhrt
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+ls -lhrt
+ls -lhrt logs
+cat  logs/20231123142001_restore.log
+tail -100f logs/20231123080601_restore.log
+tail -100f logs/20231123090601_restore.log
+tail -100f logs/20231123102001_restore.log
+ls -lhrt
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+ls -lhrt logs
+cat logs/20231123162001_restore.log
+ls -lhrt logs
+cat logs/20231123232001_restore.log
+du .
+du -h .
+ls
+ls -lhrt
+cat restore_aus_database.sh
+curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
+curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -
+exit
+ls -lhrt logs
+cat logs/20231128122001_restore.log
+cat logs/20231127122001_restore.log
+ls -lhrt logs
+cat logs/20231130122001_restore.log
+cat logs/20231130142001_restore.log
+cat logs/20231130132001_restore.log
+exit
+ls -lhrt logs
+cat logs/20231206002001_restore.log
+cat logs/20231207002001_restore.log
+ls -lhrt logs
+cat logs/20231208002001_restore.log
+ps -eaf | grep restore
+cat logs/20231207142001_restore.log
+cat logs/20231207212001_restore.log
+ls -lhrt
+date
+ls -lhrt logs
+cd logs/
+cat 20231211032001_restore.log
+cat 20231210012001_restore.log
+cat 20231209002001_restore.log
+cat 20231208202001_restore.log
+cat 20231208162001_restore.log
+ps -eaf | grep restore
+cat 20231207142001_restore.log
+cd ..
+ls -lhrt
+date
+ls -lhrt
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+ls -lhrt
+date
+rm 'AUS_DiffBackup_2023-12-07 1905.zip'
+rm 'AUS_DiffBackup_2023-12-08 1920.zip'
+rm 'AUS_DiffBackup_2023-12-09 1905.zip'
+ls -lhrt
+rm Diff*
+ls -lhrt
+ps -eaf | grep restore
+kill -9 920317
+kill -9 920315
+ps
+ps -eaf | grep restore
+ls -lhrt
+rm 'AUS_DiffBackup_2023-12-10 1905.zip'
+ls -lhrt
+ls -lhrt logs
+cat 20231211082001_restore.log
+cat logs/20231211082001_restore.log
+cat logs/20231211102001_restore.log
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+rm ausrestore.lock
+ls -lhrt
+rm Diff_2023-12-10.bak
+df -h
+ls -lhrt
+rm logs/*
+ls -lhrt logs
+date
+crontab -l
+crontab -e
+date
+ps -eaf | grep restore
+ls -lhrt 
+date
+ls -lhrt logs
+vi logs/20231214034001_restore.log
+cat logs/20231214044001_restore.log
+cat logs/20231214064001_restore.log
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+cat logs/20231214064001_restore.log
+ls -lhrt
+rm 'AUS_DiffBackup_2023-12-12 1905.zip'
+rm Diff_2023-12-12.bak
+rm 'AUS_DiffBackup_2023-12-13 1905.zip'
+ls -lhrt
+rm Diff_2023-12-13.bak
+ps -eaf | grep restore
+date
+crontab -e
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+exit
+ls -lhrt
+cat checkpoint.txt
+ls -lhrt
+rm 'AUS_DiffBackup_2023-12-13 1905.zip'
+rm Diff_2023-12-13.bak
+ls -lhrt
+date
+ls -lhrt logs
+cat logs/20231214124001_restore.log
+ls -lhrt logs
+cat logs/20231214234001_restore.log
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+ls -lhrt
+ls -lhrt logs
+cd logs
+cat 20231215034001_restore.log
+cat 20231215054001_restore.log
+ls -lhrt logs
+ls -lhrt
+cat 20231215064001_restore.log
+cat 20231215054001_restore.log
+df -h
+crontab -e
+ps -eaf | grep restore
+date
+ls -lhrt logs
+cat logs/20231215104001_restore.log
+cat logs/20231215094001_restore.log
+cat logs/20231215114001_restore.log
+rm logs/*
+ls -lhrt logs
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+ls -lhrt
+date
+ls -lhrt logs
+cd logs
+cat 20231219034001_restore.log
+cat 20231218124001_restore.log
+ls -lhrt
+cat 20231216104001_restore.log
+cat 20231217174001_restore.log
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+ps -eaf | grep restore
+crontab -l
+date
+crontab -e
+date
+ps -eaf | grep restore
+crontab -e
+date
+cd ..
+rm logs/*
+ls -lhrt 
+rm Diff*
+ls -lhrt 
+rm 'AUS_DiffBackup_2023-12-14 1905.zip'
+rm 'AUS_DiffBackup_2023-12-15 1905.zip'
+ls -lhrt
+ls -lhrt logs
+cat logs/20231219040801_restore.log
+ps -eaf | grep restore_aus_database.sh
+cat logs/20231219040801_restore.log
+date
+cat logs/20231219040801_restore.log
+ps -eaf | grep restore_aus_database.sh
+date
+ls -lhrt logs
+cat 20231219050801_restore.log
+cat logs/20231219050801_restore.log
+catlogs/20231219040801_restore.log
+cat logs/20231219040801_restore.log
+exit
+ls -lhrt
+cd logs
+ls -lhrt
+cat 20240219110801_restore.log
+cat 20240218130801_restore.log
+ls
+vi restore_aus_database.sh
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+cd logs
+ls -lhrt
+cat 20240225090801_restore.log
+cat 20240226040801_restore.log
+df -h
+cat 20240225070801_restore.log
+clear
+ls -lhrt
+date
+cd ..
+ls -lhrt
+ps -eaf | grep restore_aus_database.sh
+cd logs
+ls -lhrt
+rm 2023*
+rm 202401*
+ls -lhrt
+rm 2024020*
+rm 2024021*
+ls -lhrt
+cat 20240226040801_restore.log
+ls -lhrt
+date
+ls -lhrt
+iftop
+speedtest-cli
+ls -lhrt
+date
+ls -lhrt
+date
+ls -lhrt
+date
+exit
+ls -lhrt
+date
+ls -lhrt
+date
+ls -lhrt
+date
+7z l "AUS_DiffBackup_2023-11-22 1905.zip"
+7z l AUS_FullBackup_2024-02-25\ 1256.zip 
+7z l AUS_DiffBackup_2024-02-26\ 1039.zip 
+7z l AUS_DiffBackup_2024-02-24\ 1905.zip 
+date
+ls -lhrt
+exit
+date
+crontab -e
+date
+ps -eaf | grep restore_aus_database.sh
+ls -lhrt
+date
+cd /tmp
+ls -lhrt
+cd /
+du .
+clear
+ls -lhrt
+cd ~
+ls -lhrt
+exit
+date
+ls -lhrt
+cd logs
+ls -lhrt
+cat 20240226040801_restore.log
+df -h
+ls -lhrt
+rm *
+cd ..
+ls -lhrt
+rm *.zip
+ls -lhrt
+rm Diff_2024-02*
+ls -lhrt
+df -h
+date
+ls -lhrt
+date
+crontab -e
+rm *.zip
+rm *.lock
+date
+ls -lhrt
+df -h
+ls -lhrt
+date
+ls -lhrt
+date
+7z l 'AUS_DiffBackup_2024-02-27 1905.zip'
+cat restore_aus_database.sh
+ls -lhrt
+7z e -so 'AUS_DiffBackup_2024-02-27 1905.zip' SEA_AUS_backup_2024_02_27_190001_5237475.bak > difftemp.bak
+ps -eaf | grep restore_aus_database.sh
+kill -9 30457
+ps -eaf | grep restore_aus_database.sh
+kill -9 30459
+ps -eaf | grep restore_aus_database.sh
+ls -lhrt
+rm Diff*
+rm AUS_Diff*
+ls -lhrt
+rm *.lock
+rm diff*
+ls -lhrt
+cd logs
+ls -lhrt
+rm *
+cd ..
+7z l 'AUS_DiffBackup_2024-02-27 1905.zip'
+vi restore_aus_database.sh
+date
+crontab -e
+date
+ls -lhrt
+tail -100f logs/20240229084901_restore.log 
+ls logs
+cat 20240229084901_restore.log
+cat logs/20240229084901_restore.log
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+date
+crontab -e
+rm logs/*
+ls logs
+tail 20240229091501_restore.log
+tail -20f 20240229091501_restore.log
+ls logs
+cat 20240229091501_restore.log
+tail -20f logs/20240229091501_restore.log
+ls -lhrt
+vi restore_aus_database.sh
+ls -lhrt
+ls logs
+ls -lhrt logs
+cd logs
+cat 20240229141501_restore.log
+cat 20240229171501_restore.log
+cd ..
+ls -lhrt
+date
+cat logs/20240229111501_restore.log
+cat logs/20240229161501_restore.log
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+ls -lhrt
+ls -lhrt logs
+ls -lhrt
+cst logs 20240229101501_restore.log
+cat logs/20240229101501_restore.log
+ls -lhrt
+7z l 'AUS_FullBackup_2024-03-03 1159.zip'
+ls -lhrt
+7z l 'AUS_DiffBackup_2024-03-02 1905.zip'
+vi restore_aus_database.sh
+ls -lhrt
+exit
+ls -lhrt
+7z l 'AUS_DiffBackup_2024_03_05 1021.zip'
+ps -eaf | grep restore_aus_database.sh
+kill -9 193267
+ps -eaf | grep restore_aus_database.sh
+kill -9 193269
+ps -eaf | grep restore_aus_database.sh
+ls -lhrt
+rm 'AUS_DiffBackup_2024-03-02 1905.zip'
+7z l 'AUS_FullBackup_2024-03-03 1159.zip'
+7z l 'AUS_DiffBackup_2024_03_05 1021.zip'
+rm ausrestore.lock
+rm logs/*
+date
+crontab -e
+ls -lhrt
+ps -eaf | grep restore_aus_database.sh
+ls -lhrt
+ps -eaf | grep restore_aus_database.sh
+ls -lhrt
+7z l 'AUS_DiffBackup_2024_03_05 1021.zip'
+ls -lhrt
+ls -lmrt
+ls -lart
+ls -lhrt
+date
+crontab -e
+vi restore_aus_database.sh
+7z e -so 'AUS_DiffBackup_2024_03_05 1021.zip' SEA_AUS_backup_*.bak  > "Diff_2024-03-05.bak"
+ls -hrt
+ls -lhrt
+7z l 'AUS_DiffBackup_2024_03_05 1021.zip'
+ls -lhrt
+ls -lhrt logs/
+cat 20240305042501_restore.log
+cat logs/20240305042501_restore.log
+v
+vi restore_aus_database.sh
+ls -lhrt
+7z e -so 'AUS_DiffBackup_2024_03_05 1021.zip' SEA_AUS_backup_*.bak  > "Diff_2024-03-05.bak"
+ls -lhrt
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+ls -lhrt
+cd logs
+ls -lhrt
+cat 20240305042501_restore.log
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+ls -lhrt
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+vi restore_aus_database.sh
+exit
+screen -l
+exit
+screen -la
+screen -ls
+screen -r restore
+screen -S restore
+screen -dr restore
+/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo -Q "RESTORE DATABASE [SEA_AUS] FROM DISK = N'/home/madhanlingareddy/Full_2024-03-03.bak' WITH FILE = 1, NORECOVERY, NOUNLOAD, REPLACE, STATS = 5; RESTORE DATABASE [SEA_AUS] FROM DISK = N'/home/madhanlingareddy/Diff_2024-03-05.bak' WITH FILE = 1, RECOVERY, NOUNLOAD, REPLACE, STATS = 5;" -b
+exit
+ls -lhrt
+ls -lhrt logs/
+df -h
+rm 'AUS_FullBackup_2024-03-03 1159.zip'
+rm 'AUS_DiffBackup_2024_03_05 1021.zip'
+df -h
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+export SSHPASS="backupaus@2023"
+lasdiffbackuparchive=`sshpass -e sftp -oBatchMode=no -oStrictHostKeyChecking=no -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-rsa -P 2031 adminaus@aspstore.care.co.id << EOF
+                ls -lhrt DIFF
+EOF`
+echo $lasdiffbackuparchive
+ls -lhrt
+diffBakupArchive=`echo $lasdiffbackuparchive | tail -2 | head -1 | sed 's:.*/::'`
+echo $diffBakupArchive
+diffbakfile=`echo $diffBakupArchive | grep -o  "[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}"`
+echo $diffbakfile
+export diffbakfileDate=$(date -d "${diffbakfile}" +"%Y%m%d")
+echo $diffbakfileDate
+vi restore_aus_database.sh
+vi checkpoint.txt
+ls -lhrt
+rm Diff_2024-03-05.bak
+rm Diff_2024-03-02.bak
+rm Diff_.bak
+ls -lhrt
+rm logs/*
+screen -dr restore
+screen -ls
+ls -lhrt
+ls logs
+crontab -e
+ls -lhrt
+screen -S restore
+ls -lhrt
+screen -dr restore
+ls -lhrt
+ls
+sh restore_aus_database.sh 
+wq
+exit
+screen -dr restore
+ps -eaf | grep restore_aus_database.sh
+ls -lhrt
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+ls -lhrt logs/
+cat logs/25 20240309082501_restore
+cat logs/20240309082501_restore.log
+cat logs/20240308162501_restore.log
+cat logs/20240308202501_restore.log
+cat logs/20240308122501_restore.log
+ls -lhrt
+7z l 'AUS_DiffBackup_2024-03-08 2032.zip'
+7z l 'AUS_DiffBackup_2024_03_07 1905.zip'
+ls -lhrt
+7z l 'AUS_DiffBackup_2024-03-09 1905.zip'
+date
+ls -lhrt
+ps -eaf | grep restore_aus_database.sh
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+rm Diff_.bak
+ls -lhrt logs/
+cat logs/20240309082501_restore.log
+exit
+ls -lhrt
+date
+ls -lhrt logs/
+cat logs/20240311102501_restore.log
+ls -lhrt
+7z l 'AUS_DiffBackup_2024-03-09 1905.zip'
+cat checkpoint.txt
+cat restore_aus_database.sh
+7z e -so 'AUS_DiffBackup_2024-03-09 1905.zip' DIFF/SEA_AUS_backup_*.bak  > "Diff_2024-03-09.bak"
+ls -lhrt
+screen -dr restore
+USE [MASTER];
+ALTER DATABASE [SEA_AUS] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+RESTORE DATABASE [SEA_AUS] FROM DISK = N'/home/madhanlingareddy/Full_2024-03-08.bak' WITH FILE = 1, NORECOVERY, NOUNLOAD, REPLACE, STATS = 5;
+RESTORE DATABASE [SEA_AUS] FROM DISK = N'/home/madhanlingareddy/Diff_2024-03-09.bak' WITH FILE = 1, RECOVERY, NOUNLOAD, REPLACE, STATS = 5;
+ALTER DATABASE [SEA_AUS] SET MULTI_USER;
+USE SEA_AUS;
+CREATE USER dwuser FOR LOGIN dw_user;
+ALTER ROLE db_datareader ADD MEMBER dwuser;
+sqlcmd
+exit
+screen -S restore
+ls -lhrt
+cat restore_aus_database.sh
+ls -lhrt
+vi ausrestore.lock
+ls -lhrt
+screen -dr restore
+crontab -l
+crontab -e
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+ls -lhrt
+rm *.zip
+rm *.bak
+rm ausrestore.lock
+ls
+cd logs
+rm *
+ls
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo

@@ -1,0 +1,250 @@
+sudo apt update
+sudo apt upgrade -y
+sudo apt update
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo tee /etc/apt/trusted.gpg.d/microsoft.asc
+sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/20.04/mssql-server-2022.list)"
+sudo apt-get update
+sudo apt-get install -y mssql-server
+sudo /opt/mssql/bin/mssql-conf setup
+systemctl status mssql-server --no-pager
+sudo apt-get update
+sudo apt install curl
+curl https://packages.microsoft.com/keys/microsoft.asc | sudo tee /etc/apt/trusted.gpg.d/microsoft.asc
+curl https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee /etc/apt/sources.list.d/msprod.list
+sudo apt-get update
+sudo apt-get install mssql-tools unixodbc-dev
+echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+echo "$PATH"
+export PATH="$PATH:/opt/mssql-tools/bin"
+echo $PATH
+source ~/.bashrc
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+clear
+clear
+exit
+clear
+systemctl status mssql-server --no-pager
+exit
+exit
+sudo apt install net-tools
+netstat -plunt
+sudo netstat -plunt
+exit
+lsblk
+df -h
+df -h
+sudo df -Th
+man df
+lsblk
+sudo parted -l
+lsblk
+df -h
+sudo parted /dev/sda
+sudo parted /dev/sda
+sudo partprobe /dev/sda
+df -h
+lsblk
+df -h
+clear
+lsblk
+sudo resize2fs /dev/sda1
+sudo resize2fs /dev/sda
+clear
+df -h
+df -h
+lsblk
+sudo parted /dev/sda
+sudo parted -l /dev/sda
+sudo parted /dev/sda
+nano /etc/fstab
+sudo nano /etc/fstab
+sudo partprobe /dev/sda
+sudo partprobe /dev/sda1
+sudo partprobe
+sudo resize2fs /dev/sda1
+`exiy
+exiy
+exit
+df -h
+lsblk
+lsblk -a
+clear
+df -h
+ls
+clear
+df -h
+lsblk -a
+exit
+clear
+cd /opt
+ls
+cd mssql
+ls
+cd bin/
+ls
+ls -l
+head -10 mssql-conf 
+clear
+clear
+cd
+sudo /opt/mssql/bin/mssql-conf setup
+sudo systemctl stop mssql-server
+sudo /opt/mssql/bin/mssql-conf setup
+sudo systemctl start mssql-server
+sudo systemctl status mssql-server
+sqlcmd -S localhost -U sa -P '59JlwDgE5QkmHo'
+exit
+free
+exit
+ls
+sudo useradd — no-create-home — shell /bin/false node_exporter
+sudo useradd --no-create-home --shell /bin/false node_exporter
+cat /etc/passwd
+cd
+curl -LO https://github.com/prometheus/node_exporter/releases/download/v0.15.1/node_exporter-0.15.1.linux-amd64.tar.gz
+ls
+tar -xvf node_exporter-0.15.1.linux-amd64.tar.gz 
+ls
+rm -rf node_exporter-0.15.1.linux-amd64.tar.gz 
+sudo cp node_exporter-0.15.1.linux-amd64/node_exporter /usr/local/bin
+sudo chown node_exporter:node_exporter /usr/local/bin/node_exporter
+rm -rf node_exporter-0.15.1.linux-amd64/
+ls
+sudo nano /etc/systemd/system/node_exporter.service
+sudo systemctl daemon-reload
+sudo systemctl start node_exporter
+sudo systemctl status node_exporter
+sudo systemctl enable node_exporter
+exit
+sudo systemctl status node_exporter
+cd /var/log/
+ls
+lsb_release -a
+journalctl
+journalctl | grep node_exporter
+clear
+cd
+sudo systemctl restart node_exporter --no-collector.diskstats
+journalctl | grep node_exporter
+sudo systemctl stop node_exporter
+sudo systemctl status node_exporter
+systemctl --help
+clear
+ls
+exit
+clear
+curl -LO https://github.com/prometheus/node_exporter/releases/download/v1.6.1/node_exporter-1.6.1.linux-amd64.tar.gz
+ls
+curl --help
+ls
+tar xvf node_exporter-1.6.1.linux-amd64.tar.gz 
+ls
+sudo mv node_exporter-1.6.1.linux-amd64/node_exporter /usr/local/bin
+sudo ls -l /usr/local/bin/node_exporter
+sudo chown node_exporter:node_exporter /usr/local/bin/node_exporter
+ls
+rm -rf *
+sudo systemctl daemon-reload
+sudo systemctl start node_exporter
+sudo systemctl status node_exporter
+sudo systemctl enable node_exporter
+journalctl | grep node_exporter
+exit
+df -h
+cd /
+sudo du -sh *
+cd home/
+sudo du -sh *
+sudo su
+exit
+lsblk
+sudo su
+cd /datadisk
+cd /datadisk1/
+ls
+df -h
+clear
+lsblk
+exit
+clear
+lsb_release -a
+exit
+systemctl status mssql-server --no-pager
+systemctl enable mssql-server
+sudo systemctl enable mssql-server
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+cd ../madhanlingareddy/
+ls -al | wc -l
+ls
+exit
+ls
+df -h
+lsblk -a
+mkdir /datadisk1
+sudo mount /dev/sdb /datadisk1
+lsblk -fs
+mkfs.ext4 /dev/sdb
+sudo mkfs.ext4 /dev/sdb
+lsblk -fs
+sudo mount /dev/sdb /datadisk1
+df -h
+systemctl status mssql-server --no-pager
+sqlcmd -S localhost -U sa -P 59JlwDgE5QkmHo
+exit
+ls
+ls -l
+cd /
+ls -l
+cd datadisk1/
+ls
+mkdir test
+cd ..
+sudo chmod 757 datadisk1/
+ls -l
+cd datadisk1/
+mkdir test
+ls 
+ls -l
+rm -rf test/
+exit
+exit
+lsblk -a
+sudo unmount sdb
+mount --help
+sudo umount sdb
+sudo umount sdb /datadisk1 
+lsblk -a
+exit
+lsblk -a
+df -h
+exit
+exit
+lsblk
+df -h
+sudo mkdir /datadisk-1
+sudo rm -rf /datadisk-1
+exit
+lsblk
+df -h
+exit
+df -h
+exit
+df -h
+exit
+sudo su
+exit
+df -h
+df -h
+exit
+df -h
+exit
+sudo su
+exit
+sudo su
+exit
+exit
+exit
+df -h
+exit

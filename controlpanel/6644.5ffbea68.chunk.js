@@ -1,0 +1,45 @@
+"use strict";(self.webpackChunkcontrolpanel=self.webpackChunkcontrolpanel||[]).push([[6644],{48558:(e,t,s)=>{s.d(t,{A:()=>d});var r=s(1502),a=s(67816),i=s(80878);const o=s.n(i)().div`
+  width:100%;
+  padding:3%;
+.steps-content {
+  margin-top: 16px;
+  border-radius: 6px;
+  background-color: #fafafa;
+  min-height: 200px;
+  padding-top: 40px;
+}
+.step-heading {
+  text-align:center;
+  padding:10px;
+}
+.steps-action {
+  margin-top: 24px;
+}
+`;var n=s(70579);const{Step:c}=a.Steps;class l extends r.Component{constructor(e){super(e),this.state={steps:[{title:"Basic Information"},{title:"Policy data"},{title:"Package list"}]}}render(){const{steps:e}=this.state,{current:t}=this.props;return(0,n.jsxs)(o,{children:[(0,n.jsx)("h3",{className:"step-heading",children:(0,n.jsx)("b",{children:"Product Creation Wizard"})}),(0,n.jsx)(a.Steps,{current:t,children:e.map((e=>(0,n.jsx)(c,{title:e.title},e.title)))}),(0,n.jsx)("div",{className:"steps-content",children:this.props.children})]})}}const d=l},31681:(e,t,s)=>{s.d(t,{BV:()=>l,JY:()=>u,r_:()=>d});s(1502);var r=s(80878),a=s.n(r),i=s(67816),o=s(95916),n=s(70579);const{TreeNode:c}=i.TreeSelect;function l(e){const{getFieldDecorator:t}=this.props.form,{placeHolder:s=" ",disableField:r=!1,type:a,label:o=" ",initialValue:c="",required:l=!1,className:d=" ",extra:p="",loading:m=!1,message:h="",help:g=""}=e,x="regulatory_category_id"!==e.formName&&"category_id"!==e.formName&&l;switch(a){case"numeric":return(0,n.jsx)(i.Form.Item,{label:o,children:t(e.formName,{rules:[{required:l,message:h}],initialValue:c})((0,n.jsx)(i.InputNumber,{className:d,type:"number",min:e.min?e.min:0,disabled:r,placeholder:s}))});case"string":case"alphanumeric":return(0,n.jsx)(i.Form.Item,{extra:p,help:g,children:t(e.formName,{rules:[{required:l,message:h}],initialValue:c})((0,n.jsx)(i.Input,{className:d,disabled:r,placeholder:s}))});case"textarea":return(0,n.jsx)(i.Form.Item,{children:t(e.formName,{rules:[{required:l,message:""}],initialValue:c})((0,n.jsx)(i.Input.TextArea,{rows:e.row||4,className:d,placeholder:""}))});case"dob":return(0,n.jsx)(i.Form.Item,{children:t(e.formName,{rules:[{required:l,message:""}],initialValue:c})((0,n.jsx)(i.DatePicker,{className:d,format:"YYYY-MM-DD",placeholder:""}))});case"email":return(0,n.jsx)(i.Form.Item,{children:t(e.formName,{rules:[{required:!0,message:""},{type:"email",message:""}],initialValue:c})((0,n.jsx)(i.Input,{className:d,disabled:!!c,placeholder:""}))});case"radio":return(0,n.jsx)(i.Form.Item,{children:t(e.formName,{rules:[{required:l,message:""}],initialValue:c})((0,n.jsx)(i.Radio.Group,{children:e.options.map(((t,s)=>(0,n.jsx)(i.Radio,{value:t[e.optionKey],children:"function"===typeof t[e.optionDisplayName]?t[e.optionDisplayName]():t[e.optionDisplayName]},s)))}))});case"choices":return(0,n.jsx)(i.Form.Item,{children:t(e.formName,{rules:[{required:x,message:""}],initialValue:c})((0,n.jsx)(i.Select,{className:d,showSearch:!0,placeholder:"",filterOption:(e,t)=>t.props.children.toLowerCase().indexOf(e.toLowerCase())>=0,disabled:r,loading:m,children:e.options.map(((t,s)=>(0,n.jsx)(i.Select.Option,{value:t[e.optionKey],children:t[e.optionDisplayName]},s)))}))});case"checkbox":return(0,n.jsx)(i.Form.Item,{children:t(e.formName,{valuePropName:"checked",rules:[{required:l,message:""}],initialValue:""!==c&&c})((0,n.jsx)(i.Checkbox,{className:d,children:o}))});case"nested-tree-select":return(0,n.jsx)(i.Form.Item,{children:t(e.formName,{rules:[{required:l,message:""}],initialValue:c})((0,n.jsx)(i.TreeSelect,{className:d,placeholder:"",treeDefaultExpandAll:!0,disabled:r,loading:m,children:u(e.options)}))});default:return null}}function d(e){const{submitError:t,detailMessage:s,resetFunction:r}=e,a=(0,o.get)(s,"data.errors",[]),n=(0,o.get)(s,"data.message","");!t&&a&&"success"!==a&&(n&&(i.notification.error({message:"Error",description:n||"Package Not Created"}),r()),(0,o.isArray)(a)&&(a.forEach((e=>{this.props.form.setFields({[e.key]:{value:e.value,errors:[new Error(e.description)]}})})),r()))}const p=a().div`
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+`;function u(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:[];if(Array.isArray(e))return e.map(((e,t)=>{if(0===e.nested.length){const t=(0,n.jsxs)(p,{children:[(0,n.jsx)("span",{className:"main-text",children:e.name}),e.attribute_type&&(0,n.jsxs)("span",{className:"sub-text",children:["(",e.attribute_type,")"]})]});return(0,n.jsx)(c,{value:e.id,title:t},e.id)}return(0,n.jsx)(c,{title:e.name,children:u(e.nested)},e.id)}))}},16644:(e,t,s)=>{s.r(t),s.d(t,{default:()=>y});var r=s(1502),a=s(48558),i=s(80878);const o=s.n(i)().div`
+  display:flex;
+  justify-content: center;
+  .step1_button-section {
+    padding-left:100px;
+  }
+  .form-1 {
+    padding: 30px;
+    p {
+      font-weight:bold;
+      text-align:left;
+    }
+    .small-size {
+      width:340px;
+    }
+    .submit-button {
+      margin-bottom: 20px;
+    }
+    .next-button {
+      margin-left:20px;
+    }
+  }
+`;var n=s(67816),c=s(24952),l=s(31681),d=s(88415),p=s(95916),u=s(70579);const{getProductCategories:m,createProductAction:h,resetProductConfigRedux:g}=d.A;class x extends r.Component{constructor(){super(...arguments),this.state={category:[],formBody:{}},this.submitHandler=async e=>{e.preventDefault();const{form:t}=this.props,{formBody:s}=this.state;if(await this.validateForm())if((0,p.size)(s)>0&&(0,p.isEqual)(s,t.getFieldsValue()))this.nextPage();else{const e=t.getFieldsValue();this.setState({formBody:e}),this.props.createProductAction({body:e})}},this.nextPage=()=>{const{history:e}=this.props;e.push({pathname:"/product-config/create-product/2/table",state:{formName:"Step1",formData:{step1Data:this.state.formBody}}})},this.cancelWizard=()=>{const{history:e}=this.props;e.push("/product-config")}}UNSAFE_componentWillReceiveProps(e){const{categoryList:t,categoriesMessage:s,addProductData:r,addProductDataMessage:a}=e;if("success"===s&&(this.setState({category:(0,p.get)(t,"data.details",[])}),this.props.resetProductConfigRedux(["getProductCategoriesMessage"])),"success"===a){const e={...this.state.formBody,id:(0,p.get)(r,"data.details.id","")};n.notification.success({message:"Success",description:"Product created successfully"}),this.props.resetProductConfigRedux(["addconfigProductMessage"]),this.setState({formBody:e},(()=>{this.nextPage()}))}"success"!==a&&void 0!==a&&(window.sessionStorage.removeItem("Step1"),n.notification.error({message:"Error",description:(0,p.get)(a,"data.errors[0].description","")}),this.props.resetProductConfigRedux(["addconfigProductMessage"]))}componentDidMount(){const{location:e,form:t}=this.props;this.props.getProductCategories();const s=(0,p.get)(e,"state.step1Data",{});(0,p.size)(s)>0&&(this.setState({formBody:s}),Object.keys(s).forEach((e=>{t.setFieldsValue({[e]:s[e]})})))}async validateForm(){return new Promise((e=>{this.props.form.validateFields((t=>{e(!t)}))}))}componentWillUnmount(){window.sessionStorage.removeItem("Step1")}render(){const{category:e}=this.state,{categoryListLoading:t,categoriesError:s,createProductLoading:r,createProductError:i}=this.props;return(0,u.jsx)(n.Row,{type:"flex",children:(0,u.jsx)(n.Col,{span:24,children:(0,u.jsx)(a.A,{current:0,children:(0,u.jsx)(o,{children:(0,u.jsxs)(n.Form,{hideRequiredMark:!0,className:"form-1",onSubmit:this.submitHandler,children:[(0,u.jsxs)(n.Row,{type:"flex",children:[(0,u.jsx)(n.Col,{span:24,children:(0,u.jsx)("p",{children:"Product code"})}),(0,u.jsx)(n.Col,{span:24,children:l.BV.call(this,{formName:"code",type:"alphanumeric",required:!0,className:"small-size"})})]}),(0,u.jsxs)(n.Row,{type:"flex",children:[(0,u.jsx)(n.Col,{span:24,children:(0,u.jsx)("p",{children:"Product name"})}),(0,u.jsx)(n.Col,{span:24,children:l.BV.call(this,{formName:"name",type:"alphanumeric",required:!0,className:"small-size"})})]}),(0,u.jsxs)(n.Row,{type:"flex",children:[(0,u.jsx)(n.Col,{span:24,children:(0,u.jsx)("p",{children:"Category"})}),(0,u.jsx)(n.Col,{span:24,children:l.BV.call(this,{formName:"category_id",type:"choices",required:!0,options:e||[],optionKey:"id",loading:t&&!s,optionDisplayName:"name",className:"small-size"})})]}),(0,u.jsx)(n.Row,{type:"flex",children:(0,u.jsxs)(n.Col,{span:24,className:"step1_button-section",children:[(0,u.jsx)(n.Button,{onClick:this.cancelWizard,children:"Cancel"}),(0,u.jsx)(n.Button,{loading:r&&!i,className:"next-button",type:"primary",htmlType:"submit",children:"Next"})]})})]})})})})})}}const f=n.Form.create()(x),y=(0,c.connect)((e=>({addProductData:e.ProductConfigurable.addconfigProductData,addProductDataMessage:e.ProductConfigurable.addconfigProductMessage,categoryList:e.ProductConfigurable.getProductCategories,categoryListLoading:e.Loading.GET_PRODUCT_CATEGORIES,categoriesError:e.Error.GET_PRODUCT_CATEGORIES,categoriesMessage:e.ProductConfigurable.getProductCategoriesMessage,createProductLoading:e.Loading.CREATE_NEW_PRODUCT,createProductError:e.Error.CREATE_NEW_PRODUCT})),{getProductCategories:m,resetProductConfigRedux:g,createProductAction:h})(f)}}]);
+//# sourceMappingURL=6644.5ffbea68.chunk.js.map
