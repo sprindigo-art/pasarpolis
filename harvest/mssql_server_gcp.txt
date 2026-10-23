@@ -1,0 +1,100 @@
+============================================================================
+GCP HARVEST — ms-sql-prod-instance (35.219.99.51)
+Project: production-396704 (numeric: 661016302395)
+Harvested: 2026-10-22
+============================================================================
+
+=== INSTANCE METADATA ===
+Hostname: ms-sql-prod-instance.asia-southeast2-a.c.production-396704.internal
+Instance ID: 1075631324995091286
+Machine Type: n1-standard-2
+CPU Platform: Intel Skylake
+Zone: asia-southeast2-a
+Image: projects/production-200707/global/images/ms-sql-prod-instance-image
+Tags: ms-sql
+Preemptible: FALSE
+Automatic Restart: TRUE
+
+=== NETWORK ===
+Network: projects/661016302395/networks/default
+Subnetwork: projects/661016302395/regions/asia-southeast2/subnetworks/default
+Internal IP: 10.184.0.2
+External IP: 35.219.99.51 (ONE_TO_ONE_NAT)
+Subnet Mask: 255.255.240.0 (i.e., /20 = 10.184.0.0/20)
+Gateway: 10.184.0.1
+MAC: 42:01:0a:b8:00:02
+MTU: 1460
+DNS: 169.254.169.254
+NIC Type: VIRTIO_NET
+
+=== DISK ===
+Device: ms-sql-prod-instance
+Interface: SCSI
+Mode: READ_WRITE
+Type: PERSISTENT
+
+=== SERVICE ACCOUNT ===
+Email: 661016302395-compute@developer.gserviceaccount.com
+Aliases: default
+Scopes (LIMITED — read-only storage):
+  - https://www.googleapis.com/auth/devstorage.read_only
+  - https://www.googleapis.com/auth/logging.write
+  - https://www.googleapis.com/auth/monitoring.write
+  - https://www.googleapis.com/auth/servicecontrol
+  - https://www.googleapis.com/auth/service.management.readonly
+  - https://www.googleapis.com/auth/trace.append
+
+=== GCP TOKEN (valid ~33 min) ===
+Token type: Bearer
+Obtained via: curl metadata API
+
+=== PROJECT METADATA ===
+Project ID: production-396704
+Numeric Project ID: 661016302395
+Project Attributes: {} (empty)
+Note: Source image from different project: production-200707
+
+=== GCS BUCKETS (3 buckets) ===
+1. pasarpolis-prod-without-bq-data-archival
+   - Location: ASIA-SOUTHEAST2, STANDARD
+   - Created: 2024-12-19
+   - Contents: payment_events parquet files, claims data
+   - Access: uniformBucketLevelAccess disabled
+
+2. pasarpolis-production-data-archival
+   - Location: ASIA-SOUTHEAST2, STANDARD
+   - Created: 2023-12-06
+   - Contents: claims, bank account details, claim forms (parquet files)
+   - Access: uniformBucketLevelAccess enabled (locked)
+
+3. pasarpolis-staging-data-archival
+   - Location: ASIA-SOUTHEAST2, STANDARD
+   - Created: 2023-12-19
+   - Contents: staging claims data, attribute info, bank accounts
+   - Access: uniformBucketLevelAccess enabled (locked)
+
+=== GCP API ACCESS RESULTS ===
+ALLOWED:
+  - Storage API (list buckets, list objects) — devstorage.read_only scope
+  - Metadata API (instance, project, token)
+
+DENIED (403 — ACCESS_TOKEN_SCOPE_INSUFFICIENT):
+  - Compute API (list instances, firewall, networks) — needs compute scope
+  - Cloud SQL API — needs sqladmin scope
+  - No compute.read_only scope assigned
+
+=== GCLOUD CONFIGS ===
+/var/opt/mssql/.config/gcloud/:
+  - credentials.db (12KB)
+  - access_tokens.db (12KB)
+  - active_config (7 bytes)
+  - default_configs.db (12KB)
+  - gce flag file (4 bytes)
+
+/home/pasarpolis/.config/gcloud/:
+  - Same structure, created 2024-07-18
+
+=== BOTO CONFIG (/etc/boto.cfg) ===
+default_project_id = 661016302395
+default_api_version = 2
+service_account = default

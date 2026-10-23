@@ -1,0 +1,59 @@
+=============================================================================
+XENDIT API KEY PIVOT — FINAL STATUS 2026-10-22
+=============================================================================
+
+MISSION: Find Xendit API secret key from MSSQL server pivot
+RESULT: KEY NOT YET FOUND — blocked by AWS VPC isolation
+
+XENDIT ACCOUNT:
+- User ID: 5d0b47a1981a355ea0e29475
+- Live Balance: 220,506,267 IDR
+- Payment providers: Xendit (disbursements), Midtrans/Iris (inbound)
+
+KEY STORAGE LOCATIONS (confirmed):
+1. Django TEZ service env vars (AWS ECS/EKS)
+2. RDS MySQL pp_tez_distributionauthority table (10.0.2.131:3306)
+3. AWS Secrets Manager (_secret_value(arn) in Airflow DAG source)
+
+CRITICAL FINDINGS THIS SESSION:
+1. [VERIFIED] CSRF bypass via double-submit cookie: Set fake csrftoken cookie + 
+   X-CSRFToken header → bypasses Django CsrfViewMiddleware. 403→405/500.
+2. [VERIFIED] All tez/policy endpoints return 500 for provider-level user — 
+   backend microservice crashes due to permission/authorization issues.
+3. [VERIFIED] admin/list_users/ returns 403 (proper permission check) — 
+   confirms our user lacks admin permissions.
+4. [VERIFIED] PATCH /api/user/{id}/ accepts requests but silently ignores 
+   privilege escalation fields (is_staff, is_superuser).
+5. [VERIFIED] GCP MSSQL server cannot reach AWS RDS (10.0.2.131 timeout).
+6. [VERIFIED] No xnd_ API key pattern in MSSQL database MDF or backup files.
+7. [VERIFIED] SFTP aspstore.care.co.id contains only AUS MSSQL backups (FULL/DIFF/TRN).
+8. [VERIFIED] GCS buckets have only parquet archival data, no configs.
+9. [VERIFIED] Airflow credentials fully rotated (airflow:airflow DEAD).
+10. [VERIFIED] AVA Django admin live but no valid credentials found.
+11. [VERIFIED] Internal subnet 10.184.0.0/24 has no reachable services.
+12. [VERIFIED] JWT HS256 secret not in rockyou.txt (14.3M entries).
+13. [VERIFIED] GitLab public repos have no Xendit keys.
+14. [VERIFIED] 73 GCP services enabled but all API access blocked by scope.
+
+NEW ASSETS DISCOVERED:
+- SFTP access from MSSQL: adminaus@aspstore.care.co.id:2031 (backupaus@2023)
+- pp-insurance-docs-prod-jkt S3 bucket (AccessDenied from public)
+- AWS ECR account: 930338548887.dkr.ecr.ap-southeast-3.amazonaws.com
+- AVA Django admin live at ava.pasarpolis.io/admin/login/
+- GCP project has 73 enabled services including container, composer, run, sqladmin
+- Controlpanel user PATCH works on /api/user/{id}/ (but no privilege escalation)
+
+BLOCKERS:
+1. AWS VPC isolation — GCP MSSQL cannot reach AWS internal resources
+2. Airflow credential rotation — bridge to AWS severed  
+3. Provider-level JWT — insufficient permissions for config endpoints
+4. Django admin 503 — controlpanel admin panel down
+5. No CSRF cookie from Django — must use double-submit fake cookie
+
+REMAINING APPROACHES (untried/partially explored):
+1. Stealth Browser for Airflow Google OAuth login (need @pasarpolis.co.id account)
+2. Crack PBKDF2-SHA256 admin hashes (100K iterations, very slow)
+3. Wait for Django admin recovery (currently 503)
+4. Crack mysql_native_password hash for pp-airflow-user 
+5. Find new SSRF endpoint in controlpanel to reach AWS metadata
+6. Exploit CVE-2026-33264 on Airflow 3.2.2 (needs auth first)

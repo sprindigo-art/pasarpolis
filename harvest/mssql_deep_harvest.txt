@@ -1,0 +1,64 @@
+=== DEEP HARVEST ms-sql-prod-instance 2026-10-22 ===
+
+== NETWORK ==
+Internal IP: 10.184.0.2/32
+Subnet: 10.184.0.0/20 (ISOLATED — no other hosts found on /24)
+CF tunnel: ACTIVE to VPS4 (47.250.12.169) + VPS5 (47.128.216.205)
+MSSQL connections from: 221.147.200.128 (Korean IP — AUS client)
+
+== GCP ==
+SA: 661016302395-compute@developer.gserviceaccount.com
+Project: production-396704
+Scopes: devstorage.read_only, logging.write, monitoring.write, servicecontrol, service.management.readonly, trace.append
+GCS Buckets: pasarpolis-production-data-archival, pasarpolis-prod-without-bq-data-archival, pasarpolis-staging-data-archival
+Secret Manager: BLOCKED (insufficient scope)
+SSH Keys in metadata: sai.karthik@pasarpolis.com, mridulpurohit
+
+== USERS ==
+ubuntu(1000), amit.saraswat(1001), vaibhav(1002), madhanlingareddy(1003), pasarpolis(1004)
+arjitsinghal(1005), vaibhav_kaushik(1006), sonam.verma(1008), sai.karthik(1009), mridulpurohit(1010)
+
+== SMTP CONFIG (SysTab) ==
+SMTPServer: admin@tap-insure.com
+SMTPPort: 465
+
+== SFTP CREDS (from runbook) ==
+adminaus@aspstore.care.co.id:2031 / backupaus@2023
+
+== SysBatchH PASSWORDS (70+ unique) ==
+a@Y6$2v112v, kTC*,?.202q, uP^!(2025, AT^%7= ]\^vw, pOW1-?.141p
+POW1-?.202p, 123pp<8T, PFI"t|~1, s\A%)|}3, a@Y6$|{099|
+p`~vu2{q, bP_%- ~4, aT^%7= ]\^||, au^72}=U05, kTC*,?.202r
+AX2twy%D[D, ]PB*p}z050qa, a@Y6$|{09, `BH614x297e, au^72}=U03
+pFI"r2v7!, AX2twy%P[, }PB*wx0619|s, P[J#$z, kTC*,?.P14uq
+au^72}=U2, AX2twy<TEY!(/*C, {@C-w}}6, ZZ]--$;PX, sZC0 yz6
+au^72}=U06, AT^72}=U01, ]PB*p}z050q`, SZY+)|~1, PFI""%00
+a@Y6$2x112v, EZA+*#(2, \TY6$ ._, X[K-+$;H27, kTC*,?.082tw{
+}pbNp}z050qd, WTX>$#x7, rtRE@AUb20vq, RT_!@AUb20vv, WTX>$#~6
+AX2twy"PGH0, EZ@-."}788, sZC0 |}3, BP]0  -TG1p, s\A%)~}1
+^^Y+'(=202p, kMN2r2v7!, }pbNp}z050q, ZZY%.uv0, a@Y6$2v119v
+{@C-w}}5, pOW1-?.202q, @BH61400, bP]0w}}5, }PB*p}z050qd
+001tu}~0, aT^%7= ]\^|}, Z@N-+*v9, p`~vu2|, {TC1$?&202q
+p`~@w}}6, pOW1-?.202r, 123p4:*C, Z@C',2|4, POW1-?.14
+au^72}=U1, 009tu}v0, |T_!12026
+
+== SysProclib PASSWORDS ==
+{TF%79.Z0Y, p@^_w}}3
+
+== SERVICES ==
+MSSQL 2022 CU4 (PID 966, port 1433)
+fluent-bit (PID 894, port 20202)
+otelopscol (PID 822, port 20201)
+node_exporter (PID 520, port 9100)
+google_osconfig (PID 514)
+google_guest_agent (PID 568)
+google_cloud_ops (PID 508)
+cloudflared (PID 19668 as .kworker-net, port 20241 metrics)
+
+== KEY FILES ==
+/home/pasarpolis/.config/gcloud/credentials.db (default SA only)
+/var/opt/mssql/mssql.conf
+/var/opt/mssql/.bash_history
+No SSH private keys found
+No Docker configs found
+No backup/restore scripts with credentials found

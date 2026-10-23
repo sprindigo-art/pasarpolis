@@ -1,0 +1,69 @@
+============================================================================
+NETWORK HARVEST — ms-sql-prod-instance (35.219.99.51)
+Harvested: 2026-10-22
+============================================================================
+
+=== INTERFACES ===
+1: lo: LOOPBACK, inet 127.0.0.1/8
+2: ens4: BROADCAST,MULTICAST,UP, inet 10.184.0.2/32, MTU 1460
+
+=== ROUTES ===
+default via 10.184.0.1 dev ens4 proto dhcp src 10.184.0.2 metric 100
+10.184.0.1 dev ens4 proto dhcp scope link src 10.184.0.2 metric 100
+
+=== ARP CACHE ===
+10.184.0.1 dev ens4 lladdr 42:01:0a:b8:00:01 REACHABLE
+
+=== DNS (/etc/resolv.conf) ===
+nameserver 127.0.0.53
+options edns0 trust-ad
+search asia-southeast2-a.c.production-396704.internal c.production-396704.internal google.internal
+
+=== /etc/hosts ===
+127.0.0.1 localhost
+169.254.169.254 metadata.google.internal metadata
+
+=== SUBNET SCAN RESULTS ===
+Scan target: 10.184.0.0/24 (sampled IPs: 1-15, 20, 30, 40, 50, 100, 200, 254)
+Ports tested: 22, 80, 443, 1433, 3306, 5432, 6379, 8080, 9200, 27017
+
+OPEN PORTS FOUND:
+  10.184.0.2:22    OPEN (SSH - this host)
+  10.184.0.2:1433  OPEN (MSSQL - this host)
+
+All other IPs/ports: CLOSED or FILTERED
+
+=== WIDER SCAN 10.184.0.0/20 ===
+Scan target: 10.184.0-15.x (sampled IPs per subnet: 1,2,3,4,5,10,50,100,200)
+Ports tested: 22, 80, 443, 1433, 8080
+
+OPEN PORTS FOUND:
+  10.184.0.2:22    OPEN (this host)
+  10.184.0.2:1433  OPEN (this host)
+
+No other hosts discovered in the /20 subnet.
+This appears to be an isolated instance with no other VMs in the VPC.
+
+=== KNOWN HOSTS (SSH fingerprints — remote servers connected from this host) ===
+aspstore.care.co.id — SFTP backup server (port 2031)
+  Fingerprints (hashed): ecdsa-sha2-nistp256, ssh-rsa
+
+=== LISTENING PORTS ===
+Port  | Process          | Bind Address    | Notes
+------|------------------|-----------------|------
+22    | sshd             | 0.0.0.0 + [::] | SSH
+53    | systemd-resolve  | 127.0.0.53      | DNS stub
+1431  | sqlservr         | 127.0.0.1+[::1]| MSSQL admin
+1433  | sqlservr         | 0.0.0.0 + *    | MSSQL (public)
+1434  | sqlservr         | 127.0.0.1+[::1]| MSSQL browser
+9100  | node_exporter    | *              | Prometheus metrics (public)
+20201 | otelopscol       | *              | OpenTelemetry collector
+20202 | fluent-bit       | 0.0.0.0         | Fluent-bit
+20241 | .kworker-net     | 127.0.0.1       | Cloudflared tunnel (disguised)
+
+=== EXTERNAL CONNECTIVITY ===
+- aspstore.care.co.id:2031 (SFTP — backup source)
+- 47.250.127.60:443 (VPS1 — tool download, database mail)
+- 47.250.12.169:443 (VPS4 — cloudflared edge relay)
+- 47.128.216.205:443 (VPS5 — cloudflared edge relay)
+- metadata.google.internal (GCP metadata API)

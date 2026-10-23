@@ -1,0 +1,896 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Pasarpolis Developer Guide</title>
+  <style>
+    .highlight table td {
+      padding: 5px;
+    }
+
+    .highlight table pre {
+      margin: 0;
+    }
+
+    .highlight .gh {
+      color: #999999;
+    }
+
+    .highlight .sr {
+      color: #f6aa11;
+    }
+
+    .highlight .go {
+      color: #888888;
+    }
+
+    .highlight .gp {
+      color: #555555;
+    }
+
+    .highlight .gu {
+      color: #aaaaaa;
+    }
+
+    .highlight .nb {
+      color: #f6aa11;
+    }
+
+    .highlight .cm {
+      color: #75715e;
+    }
+
+    .highlight .cp {
+      color: #75715e;
+    }
+
+    .highlight .c1 {
+      color: #75715e;
+    }
+
+    .highlight .cs {
+      color: #75715e;
+    }
+
+    .highlight .c,
+    .highlight .cd {
+      color: #75715e;
+    }
+
+    .highlight .err {
+      color: #960050;
+    }
+
+    .highlight .gr {
+      color: #960050;
+    }
+
+    .highlight .gt {
+      color: #960050;
+    }
+
+    .highlight .gd {
+      color: #49483e;
+    }
+
+    .highlight .gi {
+      color: #49483e;
+    }
+
+    .highlight .ge {
+      color: #49483e;
+    }
+
+    .highlight .kc {
+      color: #66d9ef;
+    }
+
+    .highlight .kd {
+      color: #66d9ef;
+    }
+
+    .highlight .kr {
+      color: #66d9ef;
+    }
+
+    .highlight .no {
+      color: #66d9ef;
+    }
+
+    .highlight .kt {
+      color: #66d9ef;
+    }
+
+    .highlight .mf {
+      color: #ae81ff;
+    }
+
+    .highlight .mh {
+      color: #ae81ff;
+    }
+
+    .highlight .il {
+      color: #ae81ff;
+    }
+
+    .highlight .mi {
+      color: #ae81ff;
+    }
+
+    .highlight .mo {
+      color: #ae81ff;
+    }
+
+    .highlight .m,
+    .highlight .mb,
+    .highlight .mx {
+      color: #ae81ff;
+    }
+
+    .highlight .sc {
+      color: #ae81ff;
+    }
+
+    .highlight .se {
+      color: #ae81ff;
+    }
+
+    .highlight .ss {
+      color: #ae81ff;
+    }
+
+    .highlight .sd {
+      color: #e6db74;
+    }
+
+    .highlight .s2 {
+      color: #e6db74;
+    }
+
+    .highlight .sb {
+      color: #e6db74;
+    }
+
+    .highlight .sh {
+      color: #e6db74;
+    }
+
+    .highlight .si {
+      color: #e6db74;
+    }
+
+    .highlight .sx {
+      color: #e6db74;
+    }
+
+    .highlight .s1 {
+      color: #e6db74;
+    }
+
+    .highlight .s {
+      color: #e6db74;
+    }
+
+    .highlight .na {
+      color: #a6e22e;
+    }
+
+    .highlight .nc {
+      color: #a6e22e;
+    }
+
+    .highlight .nd {
+      color: #a6e22e;
+    }
+
+    .highlight .ne {
+      color: #a6e22e;
+    }
+
+    .highlight .nf {
+      color: #a6e22e;
+    }
+
+    .highlight .vc {
+      color: #ffffff;
+    }
+
+    .highlight .nn {
+      color: #ffffff;
+    }
+
+    .highlight .nl {
+      color: #ffffff;
+    }
+
+    .highlight .ni {
+      color: #ffffff;
+    }
+
+    .highlight .bp {
+      color: #ffffff;
+    }
+
+    .highlight .vg {
+      color: #ffffff;
+    }
+
+    .highlight .vi {
+      color: #ffffff;
+    }
+
+    .highlight .nv {
+      color: #ffffff;
+    }
+
+    .highlight .w {
+      color: #ffffff;
+    }
+
+    .highlight {
+      color: #ffffff;
+    }
+
+    .highlight .n,
+    .highlight .py,
+    .highlight .nx {
+      color: #ffffff;
+    }
+
+    .highlight .ow {
+      color: #f92672;
+    }
+
+    .highlight .nt {
+      color: #f92672;
+    }
+
+    .highlight .k,
+    .highlight .kv {
+      color: #f92672;
+    }
+
+    .highlight .kn {
+      color: #f92672;
+    }
+
+    .highlight .kp {
+      color: #f92672;
+    }
+
+    .highlight .o {
+      color: #f92672;
+    }
+
+    .text-header {
+      font-weight: 700;
+      border-top: 1px solid #f5f5f5;
+      border-bottom: 1px solid #f5f5f5;
+    }
+  </style>
+  <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+  <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+  <script src="javascripts/all.js"></script>
+</head>
+
+<body class="index"
+  data-languages="[&quot;ruby&quot;,&quot;python&quot;,&quot;java&quot;,&quot;go&quot;,&quot;javascript&quot;,&quot;php&quot;]">
+  <a href="#" id="nav-button">
+    <span>
+      NAV
+      <img src="images/navbar.png" alt="Navbar" />
+    </span>
+  </a>
+  <div class="toc-wrapper">
+    <img src="images/pp-logo-white-yellow-cap.png" class="logo" alt="Logo"
+      style="width: 170px;margin: 0 auto;padding-top: 10px;" />
+    <div class="lang-selector">
+      <a href="#" data-language-name="ruby">ruby</a>
+      <a href="#" data-language-name="python">python</a>
+      <a href="#" data-language-name="java">java</a>
+      <a href="#" data-language-name="go">go</a>
+      <a href="#" data-language-name="javascript">javascript</a>
+      <a href="#" data-language-name="php">php</a>
+    </div>
+    <div class="search">
+      <input type="text" class="search" id="input-search" placeholder="Search">
+    </div>
+    <ul class="search-results"></ul>
+    <ul id="toc" class="toc-list-h1">
+      <li>
+        <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+      </li>
+      <li>
+        <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
+      </li>
+      <li>
+        <a href="#initialization" class="toc-h1 toc-link" data-title="Initialization">Initialization</a>
+      </li>
+      <li>
+        <a href="#guide" class="toc-h1 toc-link" data-title="Guide">Guide</a>
+        <ul class="toc-list-h2">
+          <!-- <li>
+            <a href="#phone-protection" class="toc-h2 toc-link" data-title="Phone Protection">Phone Protection</a>
+          </li> -->
+          <li>
+            <a href="#config-create-policy" class="toc-h2 toc-link" data-title="Config Create Policy">Config Create
+              Policy</a>
+          </li>
+          <li>
+            <a href="#config-validate-policy" class="toc-h2 toc-link" data-title="Config Validate Policy">Config
+              Validate Policy</a>
+          </li>
+          <li>
+            <a href="#create-policy" class="toc-h2 toc-link" data-title="Create Policy">Create Policy</a>
+          </li>
+          <li>
+            <a href="#validate-policy" class="toc-h2 toc-link" data-title="Validate Policy">Validate Policy</a>
+          </li>
+          <li>
+            <a href="#create-aggregate-policy" class="toc-h2 toc-link" data-title="Create Aggregate
+            Policy">Create Aggregate
+              Policy</a>
+          </li>
+          <li>
+            <a href="#validate-aggregate-policy" class="toc-h2 toc-link" data-title="Validate Aggregate Policy">Validate
+              Aggregate Policy</a>
+          </li>
+          <li>
+            <a href="#get-policy-status" class="toc-h2 toc-link" data-title="Get Policy Status">Get Policy Status</a>
+          </li>
+          <li>
+            <a href="#cancellation" class="toc-h2 toc-link" data-title="Cancellation">Cancellation</a>
+          </li>
+          <li>
+            <a href="#termination" class="toc-h2 toc-link" data-title="Termination">Termination</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#api-references" class="toc-h1 toc-link" data-title="API References">API References</a>
+        <ul class="toc-list-h2">
+          <li>
+            <a href="#policies" class="toc-h2 toc-link text-header" data-title="URLs">Policies</a>
+            <ul class="toc-list-h2">
+              <li>
+                <a href="#urls" class="toc-h2 toc-link" data-title="URLs">URLs</a>
+              </li>
+              <li>
+                <a href="#api-routes" class="toc-h2 toc-link" data-title="API Routes">API Routes</a>
+              </li>
+              <li>
+                <a href="#create-policy-v1-api" class="toc-h2 toc-link" data-title="Create Policy V1 API">Create Policy
+                  V1 API</a>
+              </li>
+              <li>
+                <a href="#validate-policy-v1-api" class="toc-h2 toc-link" data-title="Validate Policy V1 API">Validate
+                  Policy V1 API</a>
+              </li>
+              <li>
+                <a href="#create-policy-v2-api" class="toc-h2 toc-link" data-title="Create Policy V2 API">Create Policy
+                  V2 API</a>
+              </li>
+              <li>
+                <a href="#validate-policy-v2-api" class="toc-h2 toc-link" data-title="Validate Policy V2 API">Validate
+                  Policy V2 API</a>
+              </li>
+              <li>
+                <a href="#create-aggregate-policy-v2-api" class="toc-h2 toc-link"
+                  data-title="Create Aggregate Policy V2 API">Create Aggregate Policy V2 API</a>
+              </li>
+              <li>
+                <a href="#validate-aggregate-policy-v2-api" class="toc-h2 toc-link"
+                  data-title="Validate Aggregate Policy V2 API">Validate Aggregate Policy V2 API</a>
+              </li>
+              <li>
+                <a href="#policy-status-v2-api" class="toc-h2 toc-link" data-title="Policy Status V2 API">Policy Status
+                  V2 API</a>
+              </li>
+              <li>
+                <a href="#cancellation-policy-v2-api" class="toc-h2 toc-link"
+                  data-title="Cancellation Policy V2 API">Cancellation Policy V2 API</a>
+              </li>
+              <li>
+                <a href="#termination-policy-v2-api" class="toc-h2 toc-link"
+                  data-title="Termination Policy V2 API">Termination Policy V2 API</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#claims" class="toc-h2 toc-link text-header" data-title="API Routes">Claims</a>
+            <ul class="toc-list-h2">
+              <li>
+                <a href="#urls-claims" class="toc-h2 toc-link" data-title="URLs">URLs</a>
+              </li>
+              <li>
+                <a href="#api-routes-claims" class="toc-h2 toc-link" data-title="API Routes">API Routes</a>
+              </li>
+              <li>
+                <a href="#get-benefit-list" class="toc-h2 toc-link" data-title="Benefit List API">Benefit List API</a>
+              </li>
+              <!-- <li>
+                <a href="#upload-claim-documents" class="toc-h2 toc-link"
+                  data-title="Upload Claim Document API">Upload Claim Document API</a>
+              </li> -->
+              <li>
+                <a href="#create-claim" class="toc-h2 toc-link" data-title="Benefit List API">Create Claim API</a>
+              </li>
+              <li>
+                <a href="#update-claim-documents" class="toc-h2 toc-link" data-title="Update Claim Documents API">Update
+                  Claim Documents API</a>
+              </li>
+              <li>
+                <a href="#claim-details" class="toc-h2 toc-link" data-title="Claim Details API">Claim Details API</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#webhook" class="toc-h1 toc-link" data-title="Webhook">Claims Webhook</a>
+        <ul class="toc-list-h2">
+          <li>
+            <a href="#possible-statuses" class="toc-h2 toc-link" data-title="Possible Statuses">Possible Statuses</a>
+          </li>
+          <li>
+            <a href="#possible-claim-error-codes" class="toc-h2 toc-link"
+              data-title="Possible Claim Error Codes">Possible Error Codes</a>
+          </li>
+          <li>
+            <a href="#webhook-request-payload" class="toc-h2 toc-link" data-title="Request Payload">Request Payload</a>
+          </li>
+          <li>
+            <a href="#webhook-response" class="toc-h2 toc-link" data-title="Response Body">Response Body</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
+      </li>
+      <li>
+        <a href="#calculating-hmac" class="toc-h1 toc-link" data-title="Calculating HMAC">Calculating HMAC</a>
+      </li>
+    </ul>
+  </div>
+  <div class="page-wrapper">
+    <div class="dark-box"></div>
+    <div class="content">
+      <h1 id='introduction'>Introduction</h1>
+      <p>Welcome to Pasarpolis developer guide. You can use our API to access API endpoints for policy.</p>
+      <p>We have language bindings in Shell, Ruby, Java, Go, PHP and Python! You can view code examples in the dark area
+        to the right,
+        and you can switch the programming language of the examples with the tabs in the top right.</p>
+      <h1 id='authentication'>Authentication</h1>
+      <p>We use HMAC based authentication behind the scenes.</p>
+      <p>You just need PartnerCode and PartnerSecret to get started. (details given in the Initialization section)</p>
+      <p>To know more about HMAC authentication click <a href="https://en.wikipedia.org/wiki/HMAC">here</a></p>
+      <h1 id='initialization'>Initialization</h1>
+      <blockquote>
+        <p>To initialize, use this code:</p>
+      </blockquote>
+      <pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'pasarpolis_sdk'</span>
+
+<span class="no">PasarpolisSdk</span><span class="p">.</span><span class="nf">init</span><span class="p">(</span><span class="o">&lt;</span><span class="no">PartnerCode</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="no">PartnerSecret</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="no">Host</span><span class="o">&gt;</span><span class="p">)</span>
+</code></pre>
+      <pre class="highlight python tab-python"><code><span class="kn">from</span> <span class="nn">pasapolis</span> <span class="kn">import</span> <span class="n">Client</span>
+
+<span class="n">Client</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="o">&lt;</span><span class="n">PartnerCode</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">PartnerSecret</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">Host</span><span class="o">&gt;</span><span class="p">)</span>
+</code></pre>
+      <pre class="highlight java tab-java"><code><span class="kn">import</span> <span class="nn">com.pasarpolis.sdk.PasarpolisClient</span><span class="o">;</span>
+
+<span class="n">PasarpolisClient</span><span class="o">.</span><span class="na">init</span><span class="o">(&lt;</span><span class="n">PartnerCode</span><span class="o">&gt;,</span> <span class="o">&lt;</span><span class="n">PartnerSecret</span><span class="o">&gt;,</span> <span class="o">&lt;</span><span class="n">Host</span><span class="o">&gt;);</span>
+
+</code></pre>
+      <pre class="highlight go tab-go"><code><span class="k">import</span><span class="p">(</span><span class="x">
+  </span><span class="s">"gitlab.com/pasarpolis/go-sdk"</span><span class="x">
+</span><span class="p">)</span><span class="x">
+
+</span><span class="n">pasarpolis</span><span class="o">.</span><span class="n">InitClient</span><span class="p">(</span><span class="o">&lt;</span><span class="n">PartnerCode</span><span class="o">&gt;</span><span class="p">,</span><span class="x"> </span><span class="o">&lt;</span><span class="n">PartnerSecret</span><span class="o">&gt;</span><span class="p">,</span><span class="x"> </span><span class="o">&lt;</span><span class="n">Host</span><span class="o">&gt;</span><span class="p">);</span><span class="x">
+
+</span></code></pre>
+      <pre class="highlight javascript tab-javascript"><code>
+<span class="kr">const</span> <span class="nx">sdk</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'pasarpolis-sdk-nodejs'</span><span class="p">)</span>
+<span class="kr">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="nx">sdk</span><span class="p">.</span><span class="nx">init</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">PartnerCode</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="nx">PartnerSecret</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="nx">Host</span><span class="o">&gt;</span><span class="p">)</span>
+
+</code></pre>
+
+      <pre class="highlight php tab-php"><code>
+  <span class="nx">require_once</span><span class="p">(</span><span class="s1">'pasarpolis/client.php'</span><span class="p">)</span>
+  <span class="kr">$</span><span class="nx">clientObj</span> <span class="o">=</span> <span class="nx">new client</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">PartnerCode</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="nx">PartnerSecret</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="nx">HOST</span><span class="o">&gt;</span><span class="p">)</span>
+</code></pre>
+      <p>For Initialization you need PartnerCode, PartnerSecret and Host.</p>
+      <p><strong>PartnerCode</strong> (string) : Provided by Pasarpolis for Authentication.</p>
+      <p><strong>PartnerSecret</strong> (string) : Secret Key provided by Pasarpolis.</p>
+      <p><strong>Host</strong> (string) : Fully qualified domain name as specified below.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;Sandbox: https://integrations-sandbox.pasarpolis.io</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;Production: https://integrations.pasarpolis.io</p>
+      <aside class="notice">
+        Initialize the client before calling any functionality of SDK else it will raise error.<br />
+        Please make sure you initialize client only once i.e. at start of your app else it will raise error.
+      </aside>
+
+      <!-- Guide Section started  -->
+
+      <h1 id='guide'>Guide</h1>
+
+      <!-- #1 Guide End Point Start -->
+
+      <!-- #1 Guide Heading -->
+      <div>
+        <h2 class="border-top-none" id='config-create-policy'>Config Create Policy</h2>
+
+        <!-- Start Guild Right Side Fix section for all tab  -->
+        <div>
+          <blockquote>
+            <p>Signature</p>
+          </blockquote>
+          <!-- End Guild Right Side Fix section for all tab  -->
+
+          <!-- Start Guide Right side Tab sections  -->
+          <pre class="highlight ruby tab-ruby">
+        <code>
+          <span class="n">policy</span> <span class="o">=</span> <span class="no">Pasarpolis</span><span class="o">::</span><span class="no">Policy</span><span class="p">.</span><span class="nf">config_create_policy</span><span class="p">(</span><span class="s2"><code><</code>Product<code>></code></span><span class="p">,</span> <span class="n">params</span><span class="p">);</span>
+        </code>
+      </pre>
+
+          <pre class="highlight python tab-python">
+        <code>
+          <span class="kn">from</span> <span class="nn">pasarpolis</span> <span class="kn">import</span> <span class="n">Policy</span>
+          <span class="n">policy</span> <span class="o">=</span> <span class="n">Policy</span><span class="o">.</span><span class="n">config_create_policy</span><span class="p">(</span><span class="s"><code><</code>Product<code>></code></span><span class="p">,</span> <span class="n">params</span><span class="p">);</span>
+        </code>
+      </pre>
+
+          <pre class="highlight java tab-java">
+        <code>
+          <span class="kn">import</span> <span class="nn">com.pasarpolis.sdk.models.Policy</span><span class="o">;</span>
+
+          <span class="n">Policy</span> <span class="n">policy</span> <span class="o">=</span> <span class="n">Policy</span><span class="o">.</span><span class="na">configCreatePolicy</span><span class="o">(</span><span class="s"><code><</code>Product<code>></code></span><span class="o">,</span> <span class="n">params</span><span class="o">);</span>  
+        </code>
+      </pre>
+
+          <pre class="highlight go tab-go">
+        <code>
+          <span class="k">import</span><span class="p">(</span><span class="x">
+          </span><span class="n">pasarpolis_models</span><span class="x"> </span><span class="s">"gitlab.com/pasarpolis/go-sdk.v2/models"</span><span class="x">
+          </span><span class="s">"fmt"</span><span class="x">
+          </span><span class="p">)</span><span class="x">
+            
+          </span><span class="n">policy,</span><span class="k"> error </span><span class="o">:=</span><span class="x"> </span><span class="n">pasarpolis_models</span><span class="o">.</span><span class="n">CreatePolicy</span><span class="p">(</span><span class="s"><code><</code>Product<code>></code></span><span class="p">,</span><span class="x"> </span><span class="n">params</span><span class="p">);</span><span class="x">
+          </span>
+        </code>
+      </pre>
+
+          <pre class="highlight javascript tab-javascript">
+        <code>
+          <span class="no">Policy</span><span class="p">.</span><span class="nf">config_create_policy</span><span class="p">(</span><span class="s2"><code><</code>Product<code>></code></span><span class="p">,</span> <span class="n">params</span><span class="p">);</span>
+        </code>
+      </pre>
+
+          <pre class="highlight php tab-php">
+        <code>
+          <span class="nx">require_once</span><span class="p">(</span><span class="s1">'pasarpolis/policy.php'</span><span class="p">)</span>
+
+          <span class="kr">$policyObj</span> <span class="o">=</span> <span class="s2"><span class="kt">new</span> <span class="s2">policy($params);</span></span>
+          <span class="kr">$policy</span> <span class="o">=</span> <span class="s2">$policyObj<span class="vg">-></span>config_create_policy<span class="vg">(</span><code><</code>Product<code>></code>, $params, $clientObj<span class="vg">)</span>;</span>
+        </code>
+      </pre>
+
+          <!-- End Guide Right side Tab sections  -->
+
+
+          <!-- Start Guild Right Side Fix section for all tab  -->
+          <blockquote>
+            <p>Example code:</p>
+          </blockquote>
+
+          <!-- End Guild Right Side Fix section for all tab  -->
+
+          <!-- Start Guide Right side Tab sections  -->
+
+          <pre class="highlight ruby tab-ruby">
+        <code>
+          <span class="nb">require</span> <span class="s2">"pasarpolis_sdk"</span>
+
+          <span class="n">params</span> <span class="o">=</span> <span class="p">{}</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"name"</span><span class="p">]</span><span class="o">=</span><span class="s2">"John Doe"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"email_id"</span><span class="p">]</span><span class="o">=</span><span class="s2">"john.doe@example.com"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"phone_no"</span><span class="p">]</span><span class="o">=</span><span class="s2">"+6200000000000"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"reference_id"</span><span class="p">]</span><span class="o">=</span><span class="s2">"R1"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"make"</span><span class="p">]</span><span class="o">=</span><span class="s2">"Apple"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"model"</span><span class="p">]</span><span class="o">=</span><span class="s2">"iPhone X"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"purchase_date"</span><span class="p">]</span><span class="o">=</span><span class="s2">"2018-12-20"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"purchase_value"</span><span class="p">]</span><span class="o">=</span><span class="kp">32000.00</span>
+          <span class="n">policy</span> <span class="o">=</span> <span class="no">Pasarpolis</span><span class="o">::</span><span class="no">Policy</span><span class="p">.</span><span class="nf">config_create_policy</span><span class="p">(</span><span class="s2">"gadget-protection"</span><span class="p">,</span> <span class="n">params</span><span class="p">);</span>
+          <span class="nb">puts</span> <span class="n">policy</span><span class="p">.</span><span class="nf">reference_number</span>
+          <span class="nb">puts</span> <span class="n">policy</span><span class="p">.</span><span class="nf">application_number</span>
+          <span class="nb">puts</span> <span class="n">policy</span><span class="p">.</span><span class="nf">premium</span>
+
+        </code>
+      </pre>
+
+          <pre class="highlight python tab-python">
+        <code>
+          <span class="kn">from</span> <span class="nn">pasarpolis</span> <span class="kn">import</span> <span class="n">Policy</span>
+
+          <span class="n">params</span> <span class="o">=</span> <span class="p">{}</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"name"</span><span class="p">]</span><span class="o">=</span><span class="s2">"John Doe"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"email_id"</span><span class="p">]</span><span class="o">=</span><span class="s2">"john.doe@example.com"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"phone_no"</span><span class="p">]</span><span class="o">=</span><span class="s2">"+6200000000000"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"reference_id"</span><span class="p">]</span><span class="o">=</span><span class="s2">"R1"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"make"</span><span class="p">]</span><span class="o">=</span><span class="s2">"Apple"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"model"</span><span class="p">]</span><span class="o">=</span><span class="s2">"iPhone X"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"purchase_date"</span><span class="p">]</span><span class="o">=</span><span class="s2">"2018-12-20"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"purchase_value"</span><span class="p">]</span><span class="o">=</span><span class="kp">32000.00</span>
+          <span class="n">policy</span> <span class="o">=</span> <span class="n">Policy</span><span class="o">.</span><span class="n">config_create_policy</span><span class="p">(</span><span class="s">"gadget-protection"</span><span class="p">,</span> <span class="n">params</span><span class="p">);</span>
+          <span class="k">print</span><span class="p">(</span><span class="n">policy</span><span class="o">.</span><span class="n">reference_number</span><span class="p">,</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+          <span class="k">print</span><span class="p">(</span><span class="n">policy</span><span class="o">.</span><span class="n">application_number</span><span class="p">)</span>
+          <span class="k">print</span><span class="p">(</span><span class="n">policy</span><span class="o">.</span><span class="n">premium</span><span class="p">)</span>
+        </code>
+      </pre>
+
+          <pre class="highlight java tab-java">
+        <code>
+          <span class="kn">import</span> <span class="nn">java.util.HashMap</span><span class="o">;</span>
+          <span class="kn">import</span> <span class="nn">com.pasarpolis.sdk.models.Policy</span><span class="o">;</span>
+
+          <span class="k">try</span> <span class="o">{</span>
+            <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">params</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;();</span>
+            <span class="n">params</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"name"</span><span class="o">,</span><span class="s">"John Doe"</span><span class="o">);</span>
+            <span class="n">params</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"email_id"</span><span class="o">,</span><span class="kc">"john.doe@example.com"</span><span class="o">);</span>
+            <span class="n">params</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"phone_no"</span><span class="o">,</span><span class="kc">"+6200000000000"</span><span class="o">);</span>
+            <span class="n">params</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"reference_id"</span><span class="o">,</span><span class="kc">"R1"</span><span class="o">);</span>
+            <span class="n">params</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"make"</span><span class="o">,</span><span class="kc">"Apple"</span><span class="o">);</span>
+            <span class="n">params</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"model"</span><span class="o">,</span><span class="kc">"iPhone X"</span><span class="o">);</span>
+            <span class="n">params</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"purchase_date"</span><span class="o">,</span><span class="kc">"2018-12-20"</span><span class="o">);</span>
+            <span class="n">params</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"purchase_value"</span><span class="o">,</span><span class="kc">32000.00</span><span class="o">);</span>
+            <span class="n">Policy</span> <span class="n">policy</span> <span class="o">=</span> <span class="n">Policy</span><span class="o">.</span><span class="na">configCreatePolicy</span><span class="o">(</span><span class="s">"gadget-protection"</span><span class="o">,</span> <span class="n">params</span><span class="o">);</span>  
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">policy</span><span class="o">.</span><span class="na">referenceNumber</span><span class="o">);</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">policy</span><span class="o">.</span><span class="na">applicationNumber</span><span class="o">);</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">policy</span><span class="o">.</span><span class="na">premium</span><span class="o">);</span>
+          <span class="o">}</span><span class="k">catch</span><span class="o">(</span><span class="n">Exception</span>  <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="c1">// Error Handling part</span>
+          <span class="o">}</span>
+        </code>
+      </pre>
+
+          <pre class="highlight go tab-go">
+        <code>
+          <span class="k">import</span><span class="p">(</span><span class="x">
+          </span><span class="n">pasarpolis_models</span><span class="x"> </span><span class="s">"gitlab.com/pasarpolis/go-sdk.v2/models"</span><span class="x">
+          </span><span class="s">"fmt"</span><span class="x">
+          </span><span class="p">)</span><span class="x">
+            
+          </span><span class="n">params</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="k">map</span><span class="p">[</span><span class="kt">string</span><span class="p">]</span><span class="k">interface</span><span class="p">{}{};</span><span class="x">
+          <span class="n">params</span><span class="p">[</span><span class="s2">"name"</span><span class="p">]</span><span class="o">=</span><span class="s2">"John Doe"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"email_id"</span><span class="p">]</span><span class="o">=</span><span class="s2">"john.doe@example.com"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"phone_no"</span><span class="p">]</span><span class="o">=</span><span class="s2">"+6200000000000"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"reference_id"</span><span class="p">]</span><span class="o">=</span><span class="s2">"R1"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"make"</span><span class="p">]</span><span class="o">=</span><span class="s2">"Apple"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"model"</span><span class="p">]</span><span class="o">=</span><span class="s2">"iPhone X"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"purchase_date"</span><span class="p">]</span><span class="o">=</span><span class="s2">"2018-12-20"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"purchase_value"</span><span class="p">]</span><span class="o">=</span><span class="kp">32000.00</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"last_property"</span><span class="p">]</span><span class="o">=</span><span class="kp">true</span>
+          </span><span class="n">policy</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">pasarpolis_models</span><span class="o">.</span><span class="n">ConfigCreatePolicy</span><span class="p">(</span><span class="s">"gadget-protection"</span><span class="p">,</span><span class="x"> </span><span class="n">params</span><span class="p">);</span><span class="x">
+          </span><span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="n">policy</span><span class="o">.</span><span class="n">referenceNumber</span><span class="p">);</span><span class="x">
+          </span><span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="n">policy</span><span class="o">.</span><span class="n">applicationNumber</span><span class="p">);</span><span class="x">
+          </span><span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="n">policy</span><span class="o">.</span><span class="n">premium</span><span class="p">);</span><span class="x">
+
+          </span>
+        </code>
+      </pre>
+
+          <pre class="highlight javascript tab-javascript">
+        <code>
+          <span class="kr">const</span> <span class="nx">sdk</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'pasarpolis-sdk-nodejs'</span><span class="p">)</span>
+          <span class="kr">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="nx">sdk</span><span class="p">.</span><span class="nx">init</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">PartnerCode</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="nx">PartnerSecret</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="nx">Host</span><span class="o">&gt;</span><span class="p">)</span>
+
+          <span class="kr">const</span> <span class="nx">packageName</span> <span class="o">=</span> <span class="s1">'phone-protection'</span>
+          <span class="kr">const</span> <span class="nx">params</span> <span class="o">=</span> <span class="p">{</span>
+          <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"John Doe"</span><span class="p">,</span>
+          <span class="s2">"email_id"</span><span class="p">:</span> <span class="s2">"john.doe@example.com"</span><span class="p">,</span>
+          <span class="s2">"phone_no"</span><span class="p">:</span> <span class="s2">"+6200000000000"</span><span class="p">,</span>
+          <span class="s2">"reference_id"</span><span class="p">:</span> <span class="s2">"R1"</span><span class="p">,</span>
+          <span class="s2">"make"</span><span class="p">:</span> <span class="s2">"Apple"</span><span class="p">,</span>
+          <span class="s2">"model"</span><span class="p">:</span> <span class="s2">"iPhone X"</span><span class="p">,</span>
+          <span class="s2">"purchase_date"</span><span class="p">:</span> <span class="s2">"2018-12-20"</span><span class="p">,</span>
+          <span class="s2">"purchase_value"</span><span class="p">:</span> <span class="mi">32000.00</span>
+          <span class="p">}</span>
+          <span class="kr">const</span> <span class="nx">configCreatePolicy</span> <span class="o">=</span> <span class="nx">client</span><span class="p">.</span><span class="nx">configCreatePolicy</span><span class="p">(</span><span class="s2">packageName</span><span class="p">,</span> <span class="nx">params</span><span class="p">)</span>
+
+          <span class="cm">/** It will give response as promise */</span> 
+          <span class="nx">configCreatePolicy</span>
+          <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">))</span>
+          <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">))</span>
+        </code>
+      </pre>
+
+          <pre class="highlight php tab-php">
+        <code>
+          <span class="nx">require_once</span><span class="p">(</span><span class="s1">'pasarpolis/policy.php'</span><span class="p">)</span>
+
+          <span class="kr">$policyObj</span> <span class="o">=</span> <span class="s2"><span class="kt">new</span> <span class="s2">policy($params);</span></span>
+          <span class="kr">$params</span> <span class="o">=</span> <span class="s2">Array();</span>
+          <span class="kr">$params["name"]</span> <span class="o">=</span> <span class="s2">"Jacob";</span>
+          <span class="kr">$params["email_id"]</span> <span class="o">=</span> <span class="s2">"john.doe@example.com"</span>
+          <span class="kr">$params["phone_no"]</span> <span class="o">=</span> <span class="s2">"+6200000000000"</span>
+          <span class="kr">$params["reference_id"]</span> <span class="o">=</span> <span class="s2">"R1"</span>
+          <span class="kr">$params["make"]</span> <span class="o">=</span> <span class="s2">"Apple"</span>
+          <span class="kr">$params["model"]</span> <span class="o">=</span> <span class="s2">"iPhone X"</span>
+          <span class="kr">$params["purchase_date"]</span> <span class="o">=</span> <span class="s2">"2018-12-20"</span>
+          <span class="kr">$params["purchase_value"]</span> <span class="o">=</span> <span class="s2">32000.00;</span>
+          <span class="kr">$params["last_property"]</span> <span class="o">=</span> <span class="s2">true;</span>
+          <span class="kr">$policy</span> <span class="o">=</span> <span class="s2">$policyObj<span class="vg">-></span>create_policy<span class="vg">(</span>"gadget-rental-protection", $params, $clientObj<span class="vg">)</span>;</span>
+          <span class="vg">print_r</span><span class="vg">(</span><span class="s2">$policy<span class="vg">[</span>'reference_number'<span class="vg">]</span><span class="vg">)</span>;</span>
+          <span class="kr">echo</span> <span class="s2">'<<span class="s2">br</span>>';</span></span>
+          <span class="vg">print_r</span><span class="vg">(</span><span class="s2">$policy<span class="vg">[</span>'application_number'<span class="vg">]</span><span class="vg">)</span>;</span>
+          <span class="kr">echo</span> <span class="s2">'<<span class="s2">br</span>>';</span></span>
+          <span class="vg">print_r</span><span class="vg">(</span><span class="s2">$policy<span class="vg">[</span>'premium'<span class="vg">]</span><span class="vg">)</span>;</span>
+
+        </code>
+      </pre>
+
+          <!-- End Guide Right side Tab sections  -->
+
+          <!-- Start Guild Right Side Fix section for all tab  -->
+          <blockquote>
+            <p>The above code snippet returns would return:</p>
+          </blockquote>
+          <pre class="highlight plaintext">
+        <code>
+          d77d436ad9485b86b8a0c18c3d2f70f77a10c43d
+          APP-000000224
+          15000
+        </code>
+      </pre>
+          <!-- End Guild Right Side Fix section for all tab  -->
+        </div>
+
+        <!-- #1 Guild Description Start -->
+        <p>
+          Create policy will create a new policy and will return a Policy object having <b>application_number</b>,
+          premium
+          and
+          <b>reference_number</b>.
+        </p>
+
+        <!-- #1 Guild Description End -->
+
+        <!-- #1 Guild Detail Text Start -->
+        <p>where:</p>
+        <ul>
+          <li>
+            <strong>Product</strong> (string): Type of product for which policy is being created.
+          </li>
+          <li>
+            <strong>Params</strong> (hash): Product specific data to be sent. Signature of every product specific data
+            is
+            provided here.
+          </li>
+        </ul>
+        <aside class="notice">
+          Refer to product specific documentation for details of payload.
+        </aside>
+        <p>it will return a Policy object which contains:</p>
+        <ul>
+          <li>
+            <strong>reference_number</strong> (string): Hexadecimal number provided by Pasarpolis
+            for future reference.
+          </li>
+          <li>
+            <strong>application_number</strong> (string): Number provided for future reference.
+          </li>
+          <li>
+            <strong>premium</strong> (integer): Premium amount for policy.
+          </li>
+        </ul>
+      </div>
+      <!-- #1 Guild Detail Text End -->
+
+      <!-- #1 Guide End Point End -->
+
+      <!-- #2 Guide End Point Start -->
+
+      <div>
+
+        <!-- #2 Guide Heading -->
+        <h2 id='config-validate-policy'>Config Validate Policy</h2>
+
+        <div>
+          <!-- Start Guild Right Side Fix section for all tab  -->
+          <blockquote>
+            <p>Signature</p>
+          </blockquote>
+          <!-- End Guild Right Side Fix section for all tab  -->
+
+          <!-- Start Guide Right side Tab sections  -->
+          <pre class="highlight ruby tab-ruby">
+        <code>
+          <span class="n">policy</span> <span class="o">=</span> <span class="no">Pasarpolis</span><span class="o">::</span><span class="no">Policy</span><span class="p">.</span><span class="nf">config_validate_policy</span><span class="p">(</span><span class="s2"><code><</code>Product<code>></code></span><span class="p">,</span> <span class="n">params</span><span class="p">);</span>
+        </code>
+      </pre>
+
+          <pre class="highlight python tab-python">
+        <code>
+          <span class="kn">from</span> <span class="nn">pasarpolis</span> <span class="kn">import</span> <span class="n">Policy</span>
+          <span class="n">policy</span> <span class="o">=</span> <span class="n">Policy</span><span class="o">.</span><span class="n">config_validate_policy</span><span class="p">(</span><span class="s"><code><</code>Product<code>></code></span><span class="p">,</span> <span class="n">params</span><span class="p">);</span>
+        </code>
+      </pre>
+
+          <pre class="highlight java tab-java">
+        <code>
+          <span class="kn">import</span> <span class="nn">com.pasarpolis.sdk.models.Policy</span><span class="o">;</span>
+
+          <span class="n">Policy</span> <span class="n">policy</span> <span class="o">=</span> <span class="n">Policy</span><span class="o">.</span><span class="na">configValidatePolicy</span><span class="o">(</span><span class="s"><code><</code>Product<code>></code></span><span class="o">,</span> <span class="n">params</span><span class="o">);</span>  
+        </code>
+      </pre>
+
+          <pre class="highlight go tab-go">
+        <code>
+          <span class="k">import</span><span class="p">(</span><span class="x">
+          </span><span class="n">pasarpolis_models</span><span class="x"> </span><span class="s">"gitlab.com/pasarpolis/go-sdk.v2/models"</span><span class="x">
+          </span><span class="s">"fmt"</span><span class="x">
+          </span><span class="p">)</span><span class="x">
+            
+          </span><span class="n">policy,</span><span class="k"> error </span><span class="o">:=</span><span class="x"> </span><span class="n">pasarpolis_models</span><span class="o">.</span><span class="n">ConfigCreatePolicy</span><span class="p">(</span><span class="s"><code><</code>Product<code>></code></span><span class="p">,</span><span class="x"> </span><span class="n">params</span><span class="p">);</span><span class="x">
+          </span>
+        </code>
+      </pre>
+
+          <pre class="highlight javascript tab-javascript">
+        <code>
+          <span class="no">Policy</span><span class="p">.</span><span class="nf">configValidatePolicy</span><span class="p">(</span><span class="s2"><code><</code>Product<code>></code></span><span class="p">,</span> <span class="n">params</span><span class="p">);</span>
+        </code>
+      </pre>
+
+          <pre class="highlight php tab-php">
+        <code>
+          <span class="nx">require_once</span><span class="p">(</span><span class="s1">'pasarpolis/policy.php'</span><span class="p">)</span>
+
+          <span class="kr">$policyObj</span> <span class="o">=</span> <span class="s2"><span class="kt">new</span> <span class="s2">policy($params);</span></span>
+          <span class="kr">$policy</span> <span class="o">=</span> <span class="s2">$policyObj<span class="vg">-></span>config_validate_policy<span class="vg">(</span><code><</code>Product<code>></code>, $params, $clientObj<span class="vg">)</span>;</span>
+        </code>
+      </pre>
+
+          <!-- End Guide Right side Tab sections  -->
+
+
+          <!-- Start Guild Right Side Fix section for all tab  -->
+          <blockquote>
+            <p>Example code:</p>
+          </blockquote>
+
+          <!-- End Guild Right Side Fix section for all tab  -->
+
+          <!-- Start Guide Right side Tab sections  -->
+
+          <pre class="highlight ruby tab-ruby">
+        <code>
+          <span class="nb">require</span> <span class="s2">"pasarpolis_sdk"</span>
+
+          <span class="n">params</span> <span class="o">=</span> <span class="p">{}</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"name"</span><span class="p">]</span><span class="o">=</span><span class="s2">"John Doe"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"email_id"</span><span class="p">]</span><span class="o">=</span><span class="s2">"john.doe@example.com"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"phone_no"</span><span class="p">]</span><span class="o">=</span><span class="s2">"+6200000000000"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"reference_id"</span><span class="p">]</span><span class="o">=</span><span class="s2">"R1"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"make"</span><span class="p">]</span><span class="o">=</span><span class="s2">"Apple"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"model"</span><span class="p">]</span><span class="o">=</span><span class="s2">"iPhone X"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"purchase_date"</span><span class="p">]</span><span class="o">=</span><span class="s2">"2018-12-20"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"purchase_value"</span><span class="p">]</span><span class="o">=</span><span class="kp">32000.00</span>
+          <span class="n">policy</span> <span class="o">=</span> <span class="no">Pasarpolis</span><span class="o">::</span><span class="no">Policy</span><span class="p">.</span><span class="nf">config_validate_policy</span><span class="p">(</span><span class="s2">"gadget-protection"</span><span class="p">,</span> <span class="n">params</span><span class="p">);</span>
+          <span class="nb">puts</span> <span class="n">policy</span><span class="p">.</span><span class="nf">message</span>
+
+        </code>
+      </pre>
+
+          <pre class="highlight python tab-python">
+        <code>
+          <span class="kn">from</span> <span class="nn">pasarpolis</span> <span class="kn">import</span> <span class="n">Policy</span>
+
+          <span class="n">params</span> <span class="o">=</span> <span class="p">{}</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"name"</span><span class="p">]</span><span class="o">=</span><span class="s2">"John Doe"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"email_id"</span><span class="p">]</span><span class="o">=</span><span class="s2">"john.doe@example.com"</span>
+          <span class="n">params</span><span class="p">[</span><span class="s2">"phone_no"</span><span class="p">]</span><span class="o">=</span><span class="s2">"+6200000000000"</span>
+  

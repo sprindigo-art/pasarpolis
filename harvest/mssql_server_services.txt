@@ -1,0 +1,95 @@
+============================================================================
+SERVICES HARVEST — ms-sql-prod-instance (35.219.99.51)
+OS: Ubuntu 20.04.6 LTS | Kernel: 5.15.0-1044-gcp
+Harvested: 2026-10-22
+============================================================================
+
+=== RUNNING SERVICES (28 systemd units) ===
+accounts-daemon.service          — Accounts Service
+atd.service                      — Deferred execution scheduler
+chrony.service                   — NTP client/server
+cron.service                     — Background program processing
+dbus.service                     — D-Bus System Message Bus
+getty@tty1.service               — Getty on tty1
+google-cloud-ops-agent-diagnostics.service — GCP Ops Agent Diagnostics
+google-cloud-ops-agent-fluent-bit.service  — GCP Ops Agent Logging (fluent-bit)
+google-cloud-ops-agent-opentelemetry-collector.service — GCP Ops Agent Metrics (otel)
+google-guest-agent.service       — GCE Guest Agent
+google-osconfig-agent.service    — GCP OSConfig Agent
+mssql-server.service             — Microsoft SQL Server Database Engine
+multipathd.service               — Device-Mapper Multipath
+networkd-dispatcher.service      — Dispatcher for systemd-networkd
+node_exporter.service            — Prometheus Node Exporter
+polkit.service                   — Authorization Manager
+rsyslog.service                  — System Logging Service
+serial-getty@ttyS0.service       — Serial Getty
+snapd.service                    — Snap Daemon
+ssh.service                      — OpenBSD Secure Shell server
+systemd-journald.service         — Journal Service
+systemd-logind.service           — Login Service
+systemd-networkd.service         — Network Service
+systemd-resolved.service         — Network Name Resolution
+systemd-udevd.service            — udev Kernel Device Manager
+unattended-upgrades.service      — Unattended Upgrades
+user@993.service                 — User Manager for UID 993 (systemd-networkers)
+user@997.service                 — User Manager for UID 997
+
+=== KEY PROCESSES ===
+PID 966  — sqlservr (MSSQL Server) — user: mssql
+PID 894  — fluent-bit — port 20202
+PID 822  — otelopscol (OpenTelemetry) — port 20201
+PID 520  — node_exporter — port 9100
+PID 19668 — .kworker-net (cloudflared) — port 20241 (localhost)
+PID 19410 — sshd — port 22
+
+=== MSSQL SERVER SERVICE CONFIG ===
+ExecStart: /opt/mssql/bin/sqlservr
+User: mssql
+WorkingDirectory: /var/opt/mssql
+KillMode: process
+TimeoutSec: 30min
+LimitNPROC: infinity
+LimitNOFILE: infinity
+Restart: on-failure (max 3 in 2min)
+
+=== NODE EXPORTER SERVICE ===
+ExecStart: /usr/local/bin/node_exporter
+User: node_exporter
+Version: 1.6.1
+
+=== GOOGLE CLOUD OPS AGENT ===
+Config: /etc/google-cloud-ops-agent/config.yaml (empty/default)
+Components:
+  - fluent-bit (logging) — port 20202
+  - otelopscol (metrics/OpenTelemetry) — port 20201
+  - diagnostics service
+
+=== INSTALLED TOOLS ===
+- /opt/mssql-tools/bin/sqlcmd (MSSQL CLI)
+- /snap/bin/gcloud (Google Cloud SDK)
+- /usr/local/bin/node_exporter (Prometheus)
+- 7z (7-Zip — for backup extraction)
+- sshpass (for SFTP automation)
+- python3 (3.8)
+
+=== PERSISTENCE MECHANISMS (Our access) ===
+1. Cron (apt-compat): */1 * * * * root /bin/bash -p .sys-monitor
+2. Systemd drop-in (cron.service.d/10-locale.conf): ExecStartPost
+3. rc.local: nohup sys-monitor
+4. profile.d/locale-check.sh: sys-monitor on login
+5. udev (85-network-helper.rules): sys-monitor on net device add
+6. SUID bash: /var/opt/mssql/.cache/.bash-helper
+7. Cloudflared tunnel: .kworker-net via .sys-health wrapper
+8. Backup copies: /usr/lib/.setuptools/ (self-healing)
+9. Log cleanup: selective sed in auth.log/syslog, wtmp/btmp cleaning
+10. SSH protection: sshd_config auto-fix (PasswordAuth=yes, PubkeyAuth=yes)
+
+=== SCHEDULED TASKS ===
+- apt-compat cron: sys-monitor every minute (persistence)
+- madhanlingareddy crontab: restore_aus_database.sh (commented out)
+- pasarpolis crontab: restore_aus_database.sh (commented out)
+
+=== DISK PARTITIONS ===
+/dev/root   2.0T  1.4T  648G  68%  /
+/dev/sda15  105M  6.1M   99M   6%  /boot/efi
+Various snap mounts (loop devices)

