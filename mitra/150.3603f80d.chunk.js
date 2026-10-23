@@ -1,0 +1,2 @@
+(this["webpackJsonpagent-hub"]=this["webpackJsonpagent-hub"]||[]).push([[150],{1396:function(t,n,e){"use strict";e.r(n);var c,i=e(1),a=e(756),r=e(11),s=e(10).d.div(c||(c=Object(r.a)(["\n  padding: 60px 20px 26%;\n"]))),u=e(0);var b=function(t){return Object(u.jsx)(s,{children:"Edit Health Benifit"})};n.default=function(t){return Object(u.jsx)(a.a,{children:Object(u.jsx)(b,Object(i.a)({},t))})}}}]);
+//# sourceMappingURL=150.3603f80d.chunk.js.map

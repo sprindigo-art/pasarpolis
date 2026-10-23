@@ -1,0 +1,2 @@
+(this.webpackJsonppolicies=this.webpackJsonppolicies||[]).push([[69],{1413:function(e,s,t){"use strict";t.r(s),t.d(s,"MobileTerms",(function(){return l}));var n=t(1),c=t(172),i=t(82),r=t(67),a=t(1145),j=t(2);class l extends n.Component{render(){return Object(j.jsx)(c.default,{children:Object(j.jsxs)(i.a,{lg:{span:8,offset:8},xs:24,children:[Object(j.jsx)("h3",{children:Object(j.jsx)(r.a,{id:"Syarat & Ketentuan"})}),Object(j.jsx)(a.a,{})]})})}}s.default=l}}]);
+//# sourceMappingURL=69.ba2c3e4e.chunk.js.map
